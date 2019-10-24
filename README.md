@@ -10,38 +10,38 @@ Here at Pragmatic Penguin, we strive to be a trusted source of information for n
 
 # Audience Definition
 John:
-•    He Graduated with a degree in Computer Science
-•    John is 23 years old
-•    He works in Windows OS
+- He Graduated with a degree in Computer Science
+- John is 23 years old
+- He works in Windows OS
 Scenario
-o    Recently graduated from school and wants to expand his resume
-o    Does not know any Linux
-o    He googles how to learn Linux and gets to our page
-o    He starts work immediately because he has an interview coming up
-o    He for multiple hours
+- Recently graduated from school and wants to expand his resume
+- Does not know any Linux
+- He googles how to learn Linux and gets to our page
+- He starts work immediately because he has an interview coming up
+- He for multiple hours
 
 Michelle:
-•    Network Administrator for 25 years
-•    54 years old
-•    Knows basic Linux concepts
+- Network Administrator for 25 years
+- 54 years old
+- Knows basic Linux concepts
 Scenario:
-o    Company is Switching to Linux
-o    Wants to have a better understanding
-o    She gets onto a virtual Machine and uses Ubuntu
-o    She googles how to learn Linux and end up on our page
-o    She references the page for the concepts needed to understand the basics of Linux
+- Company is Switching to Linux
+- Wants to have a better understanding
+- She gets onto a virtual Machine and uses Ubuntu
+- She googles how to learn Linux and end up on our page
+- She references the page for the concepts needed to understand the basics of Linux
 
 Jackson:
-•    High School Student
-•    14 years old
-•    Father is a teacher at RIT
+- High School Student
+- 14 years old
+- Father is a teacher at RIT
 Scenario:
-o    Wants to further his knowledge due to personal interest
-o    Would like to set up his computer in Linux
-o    Deletes Windows OS from his laptop to create a Linux only laptop
-o    Find our website
-o    Uses it to find out how to install the best distribution
-o    Is walked through how to install the distribution
+- Wants to further his knowledge due to personal interest
+- Would like to set up his computer in Linux
+- Deletes Windows OS from his laptop to create a Linux only laptop
+- Find our website
+- Uses it to find out how to install the best distribution
+- Is walked through how to install the distribution
 
 # Competitive Analysis
 ## Site A
