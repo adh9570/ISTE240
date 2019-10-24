@@ -13,6 +13,7 @@ John:
 - He Graduated with a degree in Computer Science
 - John is 23 years old
 - He works in Windows OS
+
 Scenario
 - Recently graduated from school and wants to expand his resume
 - Does not know any Linux
@@ -24,6 +25,7 @@ Michelle:
 - Network Administrator for 25 years
 - 54 years old
 - Knows basic Linux concepts
+
 Scenario:
 - Company is Switching to Linux
 - Wants to have a better understanding
@@ -35,6 +37,7 @@ Jackson:
 - High School Student
 - 14 years old
 - Father is a teacher at RIT
+
 Scenario:
 - Wants to further his knowledge due to personal interest
 - Would like to set up his computer in Linux
