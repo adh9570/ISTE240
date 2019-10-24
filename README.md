@@ -2,9 +2,13 @@
 
 # Team Members
 > Team Leader - Alexis Halbur
+
 > Content Creators/Strategists - 
+
 > Information Architect - 
+
 > Graphic Designer -
+
 > Interaction Designer -
 
 # Overview
