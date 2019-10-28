@@ -7,131 +7,144 @@
     <link rel="stylesheet" href="./assets/css/stylesheet.css">
 </head>
 
-<body>
-    <h1>Bash Shell Introduction</h1>
-    <div id="bashintro">
-    <p> 
-        Now that you've gotten your Linux all set up and running,
-        A black window called a Terminal should appear on
-        your screen. containing a blinking cursor following the words:
-        <strong>root@localhost:~#</strong>
-        <img src="bashshell.jpg" alt="Bash Shell image">
-    </p>
-    </div>
-    
-    <div id="bashsections">
-    <h1>What Does The Bash Shell Show?</h1>
-        <p>
-            This entire window is known as the shell prompt
-            This is the way your terminal informs you that it is available to input the next command
-            The shell prompt is split into different sections that help you identify certain information.
-            <ul>
-            <li>
-                <strong>root:</strong>       
-            </li>
-
-                <div id="bashpart">
-                    <img src="bashshell.jpg" alt="Bash Shell image">
-                </div>
-
-                <p>
-                    This is your username, the name of your administration account after Linux is installed.
-                    However, other accounts that are logged in to the Linux system but without the administration authorization, the
-                    root will instead display <strong>\$</strong>.
-                </p>    
-            
-
-            <li>
-                <strong>localhost:</strong>
-            </li>
-
-                <div id="bashpart">
-                    <img src="bashshell.jpg" alt="Bash Shell image">
-                </div>
-
-                <p>
-                    Here is your Linux distribution’s hostname.the hostname is the name your 
-                    distribution gives itself, but also the port your Linux will connect to. (Unless connected to a 
-                    server/ip, localhost will always be displayed as the hostname)
-                </p>
-
-            <li>
-                <strong>~:</strong>
-            </li>
-
-                <div id="bashpart">
-                    <img src="bashshell.jpg" alt="Bash Shell image">
-                </div>
-
-                <p>
-                    Following the colon is the name of the directory that you are currently in. directories
-                    are the folders your Bash Shell is currently looking in. If on Windows or MacOS, this is essentially the same
-                    as opening the Desktop, the documents folder, or any other folders on your computer.
-                </p>
-            
-            <li>
-                <strong>~</strong>
-            </li>
-
-                <div id="bashpart">
-                    <img src="bashshell.jpg" alt="Bash Shell image">
-                </div>
-
-                <p>
-                    On first log in, the Bash Shell will always be inside the home directory. To show that you
-                    are in the home directory, the tilde (~) before the colon is a shortcut for the path of the home directory.
-                </p>
-
-            <li>
-                <strong>#</strong>
-            </li>
-
-                <div id="bashpart">
-                    <img src="bashshell.jpg" alt="Bash Shell image">
-                </div>
-
-                <p>
-                    The pound punctuation (#) marks the end of the shell prompt text. If you enter in a command,
-                    the start of your command will appear after the #. Any valid Linux shell command can be entered at the blinking cursor.
-                </p>
-            
-            </ul>
-        </p>
-    </div>
-
-    <div id="bashcommands">
-        <h1>Some Starting Commands</h1>
-
-        <p>
-            There are a lot of commands to use in Linux, but there are some that you want to learn before anything else.
-            With these, you will be able to navigate and create new files and directories on your PC.
-        </p>
-        <p>
-
-            <strong>cd (directory name)</strong>
-            <div id="bashpart">
+<body id="contain">
+    <div id="pagewrap">
+    <header>
+        <img id='tux' src="./assets/media/tux.png" alt="Picture of Tux">
+        <h1>Pragmatic Penguin</h1>
+    </header>
+        <nav>
+        </nav>
+        <main>
+            <h1>Bash Shell Introduction</h1>
+            <div id="bashintro">
+            <p> 
+                Now that you've gotten your Linux all set up and running,
+                A black window called a Terminal should appear on
+                your screen. containing a blinking cursor following the words:
+                <strong>root@localhost:~#</strong>
                 <img src="bashshell.jpg" alt="Bash Shell image">
+            </p>
             </div>
-            This command lets you move from one directory to another. However, when changing between directories, you have to remember
-            to type the entire directory. For example, a folder called preset on your desktop would have the directory of desktop/preset.
-            Inputting just cd will bring you to the root directory.
-        </p>
-
-        <p>
-            <strong>mkdir (new directory name)</strong>
-            <div id="bashpart">
-                <img src="bashshell.jpg" alt="Bash Shell image">
-            </div>
-            The mkdir command will create a new directory(folder) in whichever directory the user has placed themself in.
-        </p>
-
-        <p>
-            Pwd prints the current directory
-
-            Cd takes you to the root directory
-            Ls lists everything inside your current directory
             
-        </p>
+            <div id="bashsections">
+            <h1>What Does The Bash Shell Show?</h1>
+                <p>
+                    This entire window is known as the shell prompt
+                    This is the way your terminal informs you that it is available to input the next command
+                    The shell prompt is split into different sections that help you identify certain information.
+                    <ul>
+                    <li>
+                        <strong>root:</strong>       
+                    </li>
+
+                        <div id="bashpart">
+                            <img src="bashshell.jpg" alt="Bash Shell image">
+                        </div>
+
+                        <p>
+                            This is your username, the name of your administration account after Linux is installed.
+                            However, other accounts that are logged in to the Linux system but without the administration authorization, the
+                            root will instead display <strong>\$</strong>.
+                        </p>    
+                    
+
+                    <li>
+                        <strong>localhost:</strong>
+                    </li>
+
+                        <div id="bashpart">
+                            <img src="bashshell.jpg" alt="Bash Shell image">
+                        </div>
+
+                        <p>
+                            Here is your Linux distribution’s hostname.the hostname is the name your 
+                            distribution gives itself, but also the port your Linux will connect to. (Unless connected to a 
+                            server/ip, localhost will always be displayed as the hostname)
+                        </p>
+
+                    <li>
+                        <strong>~:</strong>
+                    </li>
+
+                        <div id="bashpart">
+                            <img src="bashshell.jpg" alt="Bash Shell image">
+                        </div>
+
+                        <p>
+                            Following the colon is the name of the directory that you are currently in. directories
+                            are the folders your Bash Shell is currently looking in. If on Windows or MacOS, this is essentially the same
+                            as opening the Desktop, the documents folder, or any other folders on your computer.
+                        </p>
+                    
+                    <li>
+                        <strong>~</strong>
+                    </li>
+
+                        <div id="bashpart">
+                            <img src="bashshell.jpg" alt="Bash Shell image">
+                        </div>
+
+                        <p>
+                            On first log in, the Bash Shell will always be inside the home directory. To show that you
+                            are in the home directory, the tilde (~) before the colon is a shortcut for the path of the home directory.
+                        </p>
+
+                    <li>
+                        <strong>#</strong>
+                    </li>
+
+                        <div id="bashpart">
+                            <img src="bashshell.jpg" alt="Bash Shell image">
+                        </div>
+
+                        <p>
+                            The pound punctuation (#) marks the end of the shell prompt text. If you enter in a command,
+                            the start of your command will appear after the #. Any valid Linux shell command can be entered at the blinking cursor.
+                        </p>
+                    
+                    </ul>
+                </p>
+            </div>
+
+            <div id="bashcommands">
+                <h1>Some Starting Commands</h1>
+
+                <p>
+                    There are a lot of commands to use in Linux, but there are some that you want to learn before anything else.
+                    With these, you will be able to navigate and create new files and directories on your PC.
+                </p>
+                <p>
+
+                    <strong>cd (directory name)</strong>
+                    <div id="bashpart">
+                        <img src="bashshell.jpg" alt="Bash Shell image">
+                    </div>
+                    This command lets you move from one directory to another. However, when changing between directories, you have to remember
+                    to type the entire directory. For example, a folder called preset on your desktop would have the directory of desktop/preset.
+                    Inputting just cd will bring you to the root directory.
+                </p>
+
+                <p>
+                    <strong>mkdir (new directory name)</strong>
+                    <div id="bashpart">
+                        <img src="bashshell.jpg" alt="Bash Shell image">
+                    </div>
+                    The mkdir command will create a new directory(folder) in whichever directory the user has placed themself in.
+                </p>
+
+                <p>
+                    Pwd prints the current directory
+
+                    Cd takes you to the root directory
+                    Ls lists everything inside your current directory
+                    
+                </p>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
     </div>
 
 
