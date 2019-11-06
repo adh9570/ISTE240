@@ -127,11 +127,12 @@
                 </p>
 
                 <p>
-                    <strong>mkdir (new directory name)</strong>
+                    <strong>mkdir (new directory name) rmdir (directory name)</strong>
                     <div id="bashpart">
                         <img src="bashshell.jpg" alt="Bash Shell image">
                     </div>
                     The mkdir command will create a new directory(folder) in whichever directory the user has placed themself in.
+                    In parallel, rmdir is the command used to delete a directory. 
                 </p>
 
                 <p>
@@ -142,6 +143,7 @@
                     Pwd prints the current directory that you are in. So for example, if you are in the folder preset on your desktop,
                     entering the pwd command will show Desktop/Preset.
                 </p>
+
                 <p>
                     <strong>ls</strong>
                     <div id="bashpart">
@@ -150,6 +152,69 @@
                     The ls command will list every file, folder, or program that is inside your current directory. This is very useful to 
                     help you figure out where a file may be if you know the name of it, or if you aren't sure if you are in the right directory 
                     with everything you're looking for.
+                    
+                </p>
+
+                <p>
+                    <strong>touch (file)</strong>
+                    <div id="bashpart">
+                        <img src="bashshell.jpg" alt="Bash Shell image">
+                    </div>
+                    The touch command allows you to create a file inside the directory you are currently in. It can create any empty file
+                    such as a .txt file or an empty .zip file.
+                    
+                </p>
+
+                <p>
+                    <strong>rm (directory / file name) / rm -r (directory name)</strong>
+                    <div id="bashpart">
+                        <img src="bashshell.jpg" alt="Bash Shell image">
+                    </div>
+                    Deleting files on linux is as simple as rm followed by the file or directory name. if you wanna delete a directory and all
+                    the files contained inside, rm (directory name). However, if you want to just delete the directory without wiping the files
+                    as well, rm -r (directory name) will delete the directory but move all the files into whichever directory you are currently in.
+                    
+                </p>
+
+                <p>
+                    <strong>mv (filename) (new name)</strong>
+                    <div id="bashpart">
+                        <img src="bashshell.jpg" alt="Bash Shell image">
+                    </div>
+                    The mv command can be used to change a file or directory name. Just input the original file name first followed by the new name you
+                    wish to input and you're done! 
+
+                </p>
+
+                <p>
+                    <strong>cp</strong>
+                    <div id="bashpart">
+                        <img src="bashshell.jpg" alt="Bash Shell image">
+                    </div>
+                    The cp command will let you copy a file into a different directory within the command line. Taking two inputs, cp requires the name of the file
+                    in the directory that you are in, followed by the directory that you wish to copy it to.
+                </p>
+
+                <p>
+                    <strong>man & --help</strong>
+                    <div id="bashpart">
+                        <img src="bashshell.jpg" alt="Bash Shell image">
+                    </div>
+                    If you wanna learn more about a command that you don't normally use or don't fully understand, enter the man command followed by
+                    the command that you don't understand. For example, typing man cd will show the manual pages for the cd command. Or, you can type
+                    the command name followed by -help to see the same manual pages.
+                    
+                </p>
+
+                <p>
+                    <strong>locate</strong>
+                    <div id="bashpart">
+                        <img src="bashshell.jpg" alt="Bash Shell image">
+                    </div>
+                    If you can't remember the name of a file or where you saved it, the locate command is a nifty command to find your file. If
+                    you know a word or two contained inside the document, you can find the file with just that! By using the -i argument along with
+                    the command, you ignore the case of the text (uppercase or lowercase). So, if you're looking for a file that you know contains the word
+                    "amazing", you type locate -i amazing. If you know more than one word, just add asterisks between the words. That would look like locate -i *amazing*food*.
                     
                 </p>
     </div>
