@@ -5,7 +5,7 @@
 
 > Content Creators/Strategists - Edmond Behaeghel
 
-> Information Architect - Kevin Niedzwecki
+> Information Architect -- Kevin Niedzwecki
 
 > Graphic Designer -Edmond Behaeghel
 
