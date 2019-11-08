@@ -47,3 +47,318 @@ h1{
     margin: 20px;
     float: left;
 }
+
+/* ------------------------------------------------------------------------------------------------------*/
+
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Ariel', sans-serif;
+    background: url("https://people.rit.edu/~kjn2196/ISTE240/IndividualProject1/assets/images/ad.jpg") no-repeat center fixed;
+    background-size:cover;
+    overflow-x:scroll;
+}
+
+header {
+    text-align:center;
+    margin:auto;
+    z-index:1;
+}
+
+header h1 {
+   text-align:center;
+   width:100vw;
+   background-color:#f3e5d4;
+   font-size:32px;
+   display: block;
+   text-decoration: none;
+}
+
+#nav ul:hover li {
+    display:block;
+}
+
+#nav ul li:last-child {
+    display:block;
+    z-index:1;
+}
+
+#nav ul:hover li:last-child {
+    display:none;
+    z-index:1;
+}
+
+#nav ul {
+    background-color:#f3e5d4;
+}
+
+#nav ul li {
+    display:none;
+    background-color:#f3e5d4;
+    height: 4vh;
+    list-style: none;
+    text-align:center;
+}
+
+#nav > ul > li > a, h1 {
+    text-transform: uppercase;
+    text-align:center;
+}
+
+#nav a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 15px;
+    color: black;
+}
+
+#nav ul ul {
+    position: absolute;
+
+    visibility: hidden;
+    opacity: 0;
+}
+
+#nav li:hover, #nav li:hover li {
+    background-color:#dfccb5;
+    transition: .5s;
+    z-index:1;
+}
+
+#nav li li:hover, #nav li li:hover li {
+    background-color: #ccb79e;
+    text-decoration: underline;
+    transition: .5s;
+    z-index:1;
+}
+
+#nav li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    z-index:1;
+}
+
+#subNav {
+    display:none;
+    left:0;
+    right:0;
+}
+
+#subNav li {
+    background-color:#fcf5e8;
+    height:50%;
+}
+
+#nav ul li:hover > #subNav{
+    display:block;
+    z-index:1;
+}
+
+#nav ul li:hover > #subNav li:last-child {
+    display:none;
+}
+
+img {
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+} 
+
+article {
+    background-color:#f3e5d4;
+    width:75vw;
+    height:400px;
+    margin: auto;
+    padding:2.5vw;
+    position:absolute;
+    top:170px;
+    overflow-x:scroll;
+    opacity: 0.8;
+}
+
+.first {
+    top:130px;
+    left:12.5vw;
+    z-index:-1;
+}
+
+.second {
+    top:615px;
+    left:12.5vw;
+    z-index:-1;
+}
+
+.third {
+    top:1105px;
+    left:12.5vw;
+    z-index:-1;
+}
+h2 {
+    padding:15px;
+    text-align:center;
+}
+
+
+
+ @media screen and (min-width:1000px) { 
+    * {
+        margin:0;
+        padding:0;
+    }
+    
+    body {
+        font-family: 'Oxygen', sans-serif;
+        background: url("https://people.rit.edu/~kjn2196/ISTE240/IndividualProject1/assets/images/ad.jpg") no-repeat center fixed;
+        background-size:cover;
+        overflow-x:scroll;
+    }
+
+    header h1 {
+        text-align:center;
+        background-color:#000000;
+        color: #FFB200;
+        text-decoration:none;
+    }
+
+    #nav > ul > li > a {
+        text-align:center;
+    }
+
+    header {
+        height:200px;
+        width:100%;
+        z-index:1;
+        background-color:#000000;
+        color: #FFB200;
+        text-align:center;
+        margin:auto;
+        z-index:2;        
+    }
+
+    #nav > ul > li > a, h1 {
+        text-transform: uppercase;
+        text-align:center;
+    }
+    
+    #nav {
+        height: 100px;
+    }
+
+    #nav ul {
+        position: relative;
+        list-style-type: none;
+        display: flex;
+        height: 100%;
+        text-align:center;
+    }
+
+    #nav ul  li {
+        flex:1;
+        width:20vw;
+        height:100%;
+        background-color:#f3e5d4;
+        display: block;
+        position: relative;
+        
+    } 
+
+    #nav ul li:last-child {
+        display: none;
+    }
+
+    #nav ul li:hover{
+        background-color:#181818;
+        color: #FFB200;
+        box-shadow: 0px 8px 8px 2px rgba(255, 255, 255, 0.46);
+    }
+
+    #nav ul li a {
+        text-align:center;
+        width:100%;
+        padding-top:30px;
+        color:black;
+        position:relative;
+        display:block;
+    }
+
+    #nav ul:hover {
+        background-color:#b69d7e;
+    }
+    
+    #nav ul li:hover > #subNav{
+        display:inline;
+    }
+    
+    #nav ul li:hover > #subNav li:last-child {
+        display:none;
+    }
+
+    #subNav li {
+        background-color:#dbc9b3;
+        height:50%;
+    }
+
+    #nav a {
+        display: block;
+        text-decoration: none;
+        padding: 5px 15px;
+        color: #000;
+    }
+
+    #nav ul ul {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    #nav li:hover > ul {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    article {
+        background-color: #f3e5d4;
+        width:70vw;
+        height:300px;
+        margin-top: 70px;
+        padding:2.5vw;
+        position:absolute;
+        opacity: .8;
+        overflow-x:scroll;
+    }
+    
+    .first {
+        top:130px;
+        left:12.5vw;
+        z-index:-1;
+    }
+    
+    .second {
+        top:615px;
+        left:12.5vw;
+        z-index:-1;
+    }
+    
+    .third {
+        top:1105px;
+        left:12.5vw;
+        z-index:-1;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    h2 {
+        padding:15px;
+        text-align:center;
+    }
+} 
