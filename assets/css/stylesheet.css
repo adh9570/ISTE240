@@ -46,6 +46,7 @@ h1{
     width: 100px;
     margin: 20px;
     float: left;
+    padding-top: 60px;
 }
 
 /* ------------------------------------------------------------------------------------------------------*/
@@ -223,14 +224,10 @@ h2 {
         text-decoration:none;
     }
 
-    #nav > ul > li > a {
-        text-align:center;
-    } /*prolly dont need this */
-
     header {
         height:200px;
         width:100%;
-        z-index:1;
+        /* z-index:1; */
         background-color:#000000;
         color: #FFB200;
         text-align:center;
@@ -241,27 +238,37 @@ h2 {
     #nav > ul > li > a, h1 {
         text-transform: uppercase;
         text-align:center;
+        height: 90px;
+    }
+
+    #nav > ul > li > ul > li > a {
+        height: 90px;
     }
     
     #nav {
         height: 90px;
     }
 
-    #nav ul {
+    #nav > ul {
         position: relative;
         list-style-type: none;
         display: flex;
         height: 100%;
         text-align:center;
+        border-left: 6px solid lightgray;
     }
 
-    #nav ul li {
-        flex:1;
-        width:20vw;
+    #nav > ul > li {
+        /* flex:1;
+        doesnt seem to do anything */
+        width: 172px;
         height:100%;
-        background-color:#f3e5d4;
+        /* background-color:#f3e5d4; */
+        background-color: #FFB200;
         display: block;
         position: relative;
+        transition: background-color .2s, font-size .2s;
+        padding-top:30px;
         
     } 
 
@@ -270,22 +277,35 @@ h2 {
     }
 
     #nav ul li:hover{
-        background-color:#181818;
-        color: #FFB200;
-        box-shadow: 0px 8px 8px 2px rgba(255, 255, 255, 0.46);
+        transition-timing-function: linear;
+        background-color:rgb(250, 197, 74);
+        font-size: 13pt;
+        /* color: rgb(44, 167, 60); */
+        /* box-shadow: 6px 6px 6px 3px rgba(250, 197, 74, .451); */
+        
     }
 
-    #nav ul li a {
-        text-align:center;
-        /* width:100%; */
-        padding-top:30px;
-        color:black;
-        position:relative;
-        display:block;
+   
+
+    #nav ul li ul li{
+        width: 172px;
+        /* margin: auto; */
+        /* padding-top:30px; */
+        background-color: #FFB200;
+        list-style-type: none;
+        
+        /* height: 0px; */
+        
+        
     }
 
-    #nav ul li a ul li a {
-        width: 100%;;
+    #nav ul ul {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .2s;
     }
 
     #nav ul:hover {
@@ -294,6 +314,9 @@ h2 {
     
     #nav ul li:hover > #subNav{
         display:inline;
+        /* height: 40px; */
+        background-color: green;
+        
     }
     
     #nav ul li:hover > #subNav li:last-child {
@@ -301,8 +324,8 @@ h2 {
     }
 
     #subNav li {
-        background-color:#dbc9b3;
-        height:50%;
+        background-color:#271b0c;
+        height:90px;
     }
 
     #nav a {
@@ -312,17 +335,12 @@ h2 {
         color: #000;
     }
 
-    #nav ul ul {
-        position: absolute;
-        left: 0;
-        top: 100%;
-        visibility: hidden;
-        opacity: 0;
-    }
+    
 
     #nav li:hover > ul {
         visibility: visible;
         opacity: 1;
+
     }
     
     article {
