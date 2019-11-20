@@ -5,109 +5,146 @@
     <meta charset="UTF-8">
     <title>Bash Shell</title>
     <link rel="stylesheet" href="./assets/css/stylesheet.css">
+    <script src='./assets/js/code.js'></script>
 </head>
 
 <body id="contain">
     <div id="pagewrap">
-    <header>
-        <img id='tux' src="./assets/media/tux.png" alt="Picture of Tux">
-        <h1>Pragmatic Penguin</h1>
-    </header>
+        <header>
+            <img id='tux' src="./assets/media/tux.png" alt="Picture of Tux">
+            <h1>Pragmatic Penguin</h1>
+        </header>
         <nav>
+                <div class='back' onclick='toggle()'>
+                        <div class="square">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    <div>
+                    <div id='menu' class='hide'>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Why Linux</a>
+                            <ul>
+                                <li><a href="files.html">File System</a></li>
+                                <li><a href="bash.html">How to Bash Shell</a></li>
+                            </ul>
+                        </li>
+                            <li><a href="mint.html">Linux Mint</a></li>
+                            <li><a href="#">Linux Features</a>
+                                <ul>
+                                    <li><a href="customization.html">Customization</a></li>
+                                    <li><a href="add-ons.html">Add-Ons</a></li>
+                                </ul>
+                            </li>
+                            <li style="float: right"><a href="#">About Linux</a>
+                                <ul>
+                                    <li><a href="history.html">History</a></li>
+                                    <li><a href="q&a.html">Q & A</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                </div>
         </nav>
         <main>
-            <h1>Bash Shell Introduction</h1>
+            
             <div id="bashintro">
-            <p> 
-                Now that you've gotten your Linux all set up and running,
-                A black window called a Terminal should appear on
-                your screen. containing a blinking cursor following the words:
-                <strong>root@localhost:~#</strong>
-                <img src="bashshell.jpg" alt="Bash Shell image">
-            </p>
-            </div>
-            <div id="bashsections">
-            <h1>What Does The Bash Shell Show?</h1>
-                <p>
-                    This entire window is known as the shell prompt
-                    This is the way your terminal informs you that it is available to input the next command
-                    The shell prompt is split into different sections that help you identify certain information.
-                    <ul>
-                    <li>
-                        <strong>root:</strong>       
-                    </li>
-
-                        <div id="bashpart">
-                            <img src="bashshell.jpg" alt="Bash Shell image">
-                        </div>
-
-                        <p>
-                            This is your username, the name of your administration account after Linux is installed.
-                            However, other accounts that are logged in to the Linux system but without the administration authorization, the
-                            root will instead display <strong>\$</strong>.
-                        </p>    
-                    
-
-                    <li>
-                        <strong>localhost:</strong>
-                    </li>
-
-                        <div id="bashpart">
-                            <img src="bashshell.jpg" alt="Bash Shell image">
-                        </div>
-
-                        <p>
-                            Here is your Linux distribution’s hostname.the hostname is the name your 
-                            distribution gives itself, but also the port your Linux will connect to. (Unless connected to a 
-                            server/ip, localhost will always be displayed as the hostname)
-                        </p>
-
-                    <li>
-                        <strong>~:</strong>
-                    </li>
-
-                        <div id="bashpart">
-                            <img src="bashshell.jpg" alt="Bash Shell image">
-                        </div>
-
-                        <p>
-                            Following the colon is the name of the directory that you are currently in. directories
-                            are the folders your Bash Shell is currently looking in. If on Windows or MacOS, this is essentially the same
-                            as opening the Desktop, the documents folder, or any other folders on your computer.
-                        </p>
-                    
-                    <li>
-                        <strong>~</strong>
-                    </li>
-
-                        <div id="bashpart">
-                            <img src="bashshell.jpg" alt="Bash Shell image">
-                        </div>
-
-                        <p>
-                            On first log in, the Bash Shell will always be inside the home directory. To show that you
-                            are in the home directory, the tilde (~) before the colon is a shortcut for the path of the home directory.
-                        </p>
-
-                    <li>
-                        <strong>#</strong>
-                    </li>
-
-                        <div id="bashpart">
-                            <img src="bashshell.jpg" alt="Bash Shell image">
-                        </div>
-
-                        <p>
-                            The pound punctuation (#) marks the end of the shell prompt text. If you enter in a command,
-                            the start of your command will appear after the #. Any valid Linux shell command can be entered at the blinking cursor.
-                        </p>
-                    
-                    </ul>
+                <h2>Bash Shell Introduction</h2>
+                <hr>
+                <p> 
+                    Now that you've gotten your Linux all set up and running,
+                    A black window called a Terminal should appear on
+                    your screen. containing a blinking cursor following the words:
+                    <strong>root@localhost:~#</strong>
+                    <img src="bashshell.jpg" alt="Bash Shell image">
                 </p>
+            </div>
+            
+            <div id="bashsections">
+                <h2>What Does The Bash Shell Show?</h2>
+                <hr>
+                    <p>
+                        This entire window is known as the shell prompt
+                        This is the way your terminal informs you that it is available to input the next command
+                        The shell prompt is split into different sections that help you identify certain information.
+                        <ul>
+                        <li>
+                            <strong>root:</strong>       
+                        </li>
+
+                            <div id="bashpart">
+                                <img src="bashshell.jpg" alt="Bash Shell image">
+                            </div>
+
+                            <p>
+                                This is your username, the name of your administration account after Linux is installed.
+                                However, other accounts that are logged in to the Linux system but without the administration authorization, the
+                                root will instead display <strong>\$</strong>.
+                            </p>    
+                        
+
+                        <li>
+                            <strong>localhost:</strong>
+                        </li>
+
+                            <div id="bashpart">
+                                <img src="bashshell.jpg" alt="Bash Shell image">
+                            </div>
+
+                            <p>
+                                Here is your Linux distribution’s hostname.the hostname is the name your 
+                                distribution gives itself, but also the port your Linux will connect to. (Unless connected to a 
+                                server/ip, localhost will always be displayed as the hostname)
+                            </p>
+
+                        <li>
+                            <strong>~:</strong>
+                        </li>
+
+                            <div id="bashpart">
+                                <img src="bashshell.jpg" alt="Bash Shell image">
+                            </div>
+
+                            <p>
+                                Following the colon is the name of the directory that you are currently in. directories
+                                are the folders your Bash Shell is currently looking in. If on Windows or MacOS, this is essentially the same
+                                as opening the Desktop, the documents folder, or any other folders on your computer.
+                            </p>
+                        
+                        <li>
+                            <strong>~</strong>
+                        </li>
+
+                            <div id="bashpart">
+                                <img src="bashshell.jpg" alt="Bash Shell image">
+                            </div>
+
+                            <p>
+                                On first log in, the Bash Shell will always be inside the home directory. To show that you
+                                are in the home directory, the tilde (~) before the colon is a shortcut for the path of the home directory.
+                            </p>
+
+                        <li>
+                            <strong>#</strong>
+                        </li>
+
+                            <div id="bashpart">
+                                <img src="bashshell.jpg" alt="Bash Shell image">
+                            </div>
+
+                            <p>
+                                The pound punctuation (#) marks the end of the shell prompt text. If you enter in a command,
+                                the start of your command will appear after the #. Any valid Linux shell command can be entered at the blinking cursor.
+                            </p>
+                        
+                        </ul>
+                    </p>
             </div>
 
             <div id="bashcommands">
-                <h1>Some Starting Commands</h1>
+                <h2>Starting Commands</h2>
+                <hr>
 
                 <p>
                     There are a lot of commands to use in Linux, but there are some that you want to learn before anything else.
@@ -125,11 +162,98 @@
                 </p>
 
                 <p>
-                    <strong>mkdir (new directory name)</strong>
+                    <strong>mkdir (new directory name) rmdir (directory name)</strong>
                     <div id="bashpart">
                         <img src="bashshell.jpg" alt="Bash Shell image">
                     </div>
                     The mkdir command will create a new directory(folder) in whichever directory the user has placed themself in.
+                     In parallel, <strong>rmdir</strong> is the command used to delete a directory. 
+                </p>
+
+                <p>
+                    <strong>pwd</strong>
+                    <div id="bashpart">
+                        <img src="bashshell.jpg" alt="Bash Shell image">
+                    </div>
+                    Pwd prints the current directory that you are in. So for example, if you are in the folder preset on your desktop,
+                    entering the pwd command will show Desktop/Preset.
+                </p>
+
+                <p>
+                    <strong>ls</strong>
+                    <div id="bashpart">
+                        <img src="bashshell.jpg" alt="Bash Shell image">
+                    </div>
+                    The ls command will list every file, folder, or program that is inside your current directory. This is very useful to 
+                    help you figure out where a file may be if you know the name of it, or if you aren't sure if you are in the right directory 
+                    with everything you're looking for.
+                    
+                </p>
+
+                <p>
+                    <strong>touch (file)</strong>
+                    <div id="bashpart">
+                        <img src="bashshell.jpg" alt="Bash Shell image">
+                    </div>
+                    The touch command allows you to create a file inside the directory you are currently in. It can create any empty file
+                    such as a .txt file or an empty .zip file.
+                    
+                </p>
+
+                <p>
+                    <strong>rm (directory / file name) / rm -r (directory name)</strong>
+                    <div id="bashpart">
+                        <img src="bashshell.jpg" alt="Bash Shell image">
+                    </div>
+                    Deleting files on linux is as simple as rm followed by the file or directory name. if you wanna delete a directory and all
+                    the files contained inside, <strong>rm (directory name)</strong>. However, if you want to just delete the directory without wiping the files
+                    as well, <strong>rm -r (directory name)</strong> will delete the directory but move all the files into whichever directory you are currently in.
+                    
+                </p>
+
+                <p>
+                    <strong>mv (filename) (new name)</strong>
+                    <div id="bashpart">
+                        <img src="bashshell.jpg" alt="Bash Shell image">
+                    </div>
+                    The mv command can be used to change a file or directory name. Just input the original file name first followed by the new name you
+                    wish to input and you're done! 
+
+                </p>
+
+                <p>
+                    <strong>cp</strong>
+                    <div id="bashpart">
+                        <img src="bashshell.jpg" alt="Bash Shell image">
+                    </div>
+                    The cp command will let you copy a file into a different directory within the command line. Taking two inputs, cp requires the name of the file
+                    in the directory that you are in, followed by the directory that you wish to copy it to.
+                </p>
+
+                <p>
+                    <strong>man & --help</strong>
+                    <div id="bashpart">
+                        <img src="bashshell.jpg" alt="Bash Shell image">
+                    </div>
+                    If you wanna learn more about a command that you don't normally use or don't fully understand, enter the man command followed by
+                    the command that you don't understand. For example, typing <strong>man cd</strong> will show the manual pages for the cd command. Or, you can type
+                    the command name followed by <strong>-help</strong> to see the same manual pages.
+                    
+                </p>
+
+                <p>
+                    <strong>locate</strong>
+                    <div id="bashpart">
+                        <img src="bashshell.jpg" alt="Bash Shell image">
+                    </div>
+                    If you can't remember the name of a file or where you saved it, the locate command is a nifty command to find your file. If
+                    you know a word or two contained inside the document, you can find the file with just that! By using the -i argument along with
+                    the command, you ignore the case of the text (uppercase or lowercase). So, if you're looking for a file that you know contains the word
+                    "amazing", you type <strong>locate -i amazing</strong>. If you know more than one word, just add asterisks between the words. That would look like
+                    <strong>locate -i *amazing*food*</strong>
+                    
+                </p>
+    </div>
                 </p>
 
                 <p>
@@ -144,12 +268,7 @@
         <footer>
 
         </footer>
-    </div>
-
-
-</body>
-
-</html>
+     </div>
 </body>
 
 </html>

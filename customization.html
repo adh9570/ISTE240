@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Shape Your Linux 101</title>
     <link rel="stylesheet" href="./assets/css/stylesheet.css">
+    <script src='./assets/js/code.js'></script>
 </head>
 
 <body id="contain">
@@ -14,10 +15,41 @@
                 <h1>Pragmatic Penguin</h1>
             </header>
             <nav>
-
+                    <div class='back' onclick='toggle()'>
+                            <div class="square">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                        <div>
+                        <div id='menu' class='hide'>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Why Linux</a>
+                            <ul>
+                                <li><a href="files.html">File System</a></li>
+                                <li><a href="bash.html">How to Bash Shell</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="mint.html">Linux Mint</a></li>
+                        <li><a href="#">Linux Features</a>
+                            <ul>
+                                <li><a href="customization.html">Customization</a></li>
+                                <li><a href="add-ons.html">Add-Ons</a></li>
+                            </ul>
+                        </li>
+                        <li style="float: right"><a href="#">About Linux</a>
+                            <ul>
+                                <li><a href="history.html">History</a></li>
+                                <li><a href="q&a.html">Q & A</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </nav>
             <main>
-                <h1>Shape your Linux 101</h1> <!--Title for the page, needs to standout, did not think a div was needed but feel free to add-->
+                <h2>Shape your Linux 101</h2> <!--Title for the page, needs to standout, did not think a div was needed but feel free to add-->
+                <hr>
 
                 <div id="intro"><!--This div will contain a breif description of linux cutomization-->
                     <p>
@@ -31,36 +63,43 @@
                 <div id="theMeat"><!--This div conatins the actual info for the page-->
                     <ul>
                         <li>Tweak your desktop abilities:</li>
+                        <br>
                         <ol>
                             <li>File Manager: You can have a different look for all your files and processes in Linux. Probably, 
                                 the most well known look is GNOME. You can always download and install new file looks such as 
                                 Midnight commander, or Konqueror. You can even personalize files by using the KDE 
                                 Dolphin tool. 
                             </li>
-
+                            <br>
                             <li>
                                 Window Manager: Another customization option in Linux is being able to change the placement 
                                 and appearance of the windows. You can do this using a window manager such as Compiz, 
                                 Metacity, Kwin, and Mutter. 
                             </li>
-
+                            <br>
                             <li>
                                 The Dock: You can also change the appearance of your dock if you would like to. You can download 
                                 almost any type of dock depending on your needs. You can even get a dock modeled after macOS if 
                                 you pleased. 
                             </li>
+                            <br>
+                            <br>
                         </ol><!--Close the ol in tweak desktop abilities-->
 
                         <li>Change your Desktop theme:</li>
+                        <br>
                         <ol>
                             <li>
                                 One of the built in customization options in  Linux is to be able to change the theme of your 
                                 desktop. This means that you can change your desktop background and wallpaper. You can change the
                                 way the entire desktop looks and feels with many themes available to download and install for free. 
                             </li>
+                            <br>
+                            <br>
                         </ol><!--Close the ol in change desktop theme-->
 
                         <li>Install New Icons and Fonts:</li>
+                        <br>
                         <ol>
                             <li>
                                 There are endless icon packs available for Linux to use. You can choose almost any style icon 
