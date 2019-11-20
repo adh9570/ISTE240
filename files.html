@@ -5,56 +5,8 @@
     <meta charset="UTF-8">
     <title>File System</title>
     <link rel="stylesheet" href="./assets/css/stylesheet.css">
+    <script src='./assets/js/code.js'></script>
 </head>
-
-<body>
-    <div id="intro"><!--Start div for intro p-->
-        <p>
-            In Linux, everything is a file. If it's not a file then it is a process. It is important to note that there
-            are different types of files in Linux, but it is an accepted generalization to refer to them all as files. 
-            A Linux system, just like a Unix system, makes no difference between a file or a directory. A directory is 
-            just a file, containing multiple names of other files. Programs, services, text, images, and so on, are all 
-            considered files in Linux. In order to keep track of all these files it's easier to think of them in a tree-like 
-            structure. In Linux there are no drive letters. This is because the files are not ties to one particular hard drive 
-            location. Hard drives are simply known as /dev/sda or /dev/sdb.<br><br>   
-        </p>
-    </div><!--end div for intro p-->
-
-    <div id="directories">
-        <p>The following list contains some common directories in Linux. This can prove to be useful when trying to find a file or location to
-            store a specific file.
-        </p>
-
-        <ul><!--Start the list for the common directories and meaning-->
-            <li>*/: Root directory (Based off of the file system)</li>
-            <li>/bin: Executable programs</li>
-            <li>/boot: Linux kernel and boot loader</li>
-            <li>/dev: Special device files</li>
-            <li>/etc: System configuration files</li>
-            <li>/home: Home directories of all users</li>
-            <li>/lib: Library files for programs</li>
-            <li>/media: Mount points for CD-ROM and other media</li>
-            <li>*/tmp: Temporary directory</li>
-        </ul><!--End list of common directories-->
-    </div><!--End div for common directories-->
-
-    <div id="permissions">
-        <p>The following list contains some different various of file permissions you may encounter. </p>
-
-        <!--Start list for permissions-->
-        <ul>
-            <li>rwxrwxrwx: Three sets of rwx. The leftmost set pertains to the owner, the middle set is for the group, and the rightmost set 
-                is for others; rwx stands for read (r), write (w), execute (x); the dash (–) means no permission.
-            </li>
-            <li>rwx——: Only the owner can read, write, and execute</li>
-            <li>rw——-: Only the owner can read and write.</li>
-            <li>r–r–r–: Everyone can read.</li>
-            <li>Permissions can also be expressed numerically, where read (r) is equal to 4, write (w) is equal to 2, execute (x) is equal 
-                to 1, and no permission is equal to 0. Therefore, rwxrwxrwx is equal to 777, rwx—— is equal to 700, rw-r–r— is equal to 644, 
-                rw——- is equal to 600, and r–r–r— is equal to 444.
-            </li>
-        </ul><!--Close list for permissions-->
-    </div><!--close permissions div-->
 
 <body id="contain">
     <div id="pagewrap">
@@ -63,18 +15,89 @@
                 <h1>Pragmatic Penguin</h1>
         </header>
         <nav>
-
+                <div class='back' onclick='toggle()'>
+                        <div class="square">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    <div>
+                    <div id='menu' class='hide'>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Why Linux</a>
+                                <ul>
+                                    <li><a href="file.html">File System</a></li>
+                                    <li><a href="bash.html">How to Bash Shell</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="mint.html">Linux Mint</a></li>
+                            <li><a href="#">Linux Features</a>
+                                <ul>
+                                    <li><a href="customization.html">Customization</a></li>
+                                    <li><a href="add-ons.html">Add-Ons</a></li>
+                                </ul>
+                            </li>
+                            <li style="float: right"><a href="#">About Linux</a>
+                                <ul>
+                                    <li><a href="history.html">History</a></li>
+                                    <li><a href="q&a.html">Q & A</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
         </nav>
         <main>
-            <p>
-                In Linux, everything is a file. If it's not a file then it is a process. It is important to note that there
-                are different types of files in Linux, but it is an accepted generalization to refer to them all as files. 
-                A Linux system, just like a Unix system, makes no difference between a file or a directory. A directory is 
-                just a file, containing multiple names of other files. Programs, services, text, images, and so on, are all 
-                considered files in Linux. In order to keep track of all these files it's easier to think of them in a tree-like 
-                structure. In Linux there are no drive letters. This is because the files are not ties to one particular hard drive 
-                location. Hard drives are simply known as /dev/sda or /dev/sdb.
-            </p>
+            <h2>File Systems</h2>
+            <hr>
+            <div id="intro"><!--Start div for intro p-->
+                <p>
+                    In Linux, everything is a file. If it's not a file then it is a process. It is important to note that there
+                    are different types of files in Linux, but it is an accepted generalization to refer to them all as files. 
+                    A Linux system, just like a Unix system, makes no difference between a file or a directory. A directory is 
+                    just a file, containing multiple names of other files. Programs, services, text, images, and so on, are all 
+                    considered files in Linux. In order to keep track of all these files it's easier to think of them in a tree-like 
+                    structure. In Linux there are no drive letters. This is because the files are not ties to one particular hard drive 
+                    location. Hard drives are simply known as /dev/sda or /dev/sdb.<br><br>   
+                </p>
+            </div><!--end div for intro p-->
+        
+            <div id="directories">
+                <p>The following list contains some common directories in Linux. This can prove to be useful when trying to find a file or location to
+                    store a specific file.
+                </p>
+        
+                <ul><!--Start the list for the common directories and meaning-->
+                    <li>*/: Root directory (Based off of the file system)</li>
+                    <li>/bin: Executable programs</li>
+                    <li>/boot: Linux kernel and boot loader</li>
+                    <li>/dev: Special device files</li>
+                    <li>/etc: System configuration files</li>
+                    <li>/home: Home directories of all users</li>
+                    <li>/lib: Library files for programs</li>
+                    <li>/media: Mount points for CD-ROM and other media</li>
+                    <li>*/tmp: Temporary directory</li>
+                </ul><!--End list of common directories-->
+            </div><!--End div for common directories-->
+        
+            <div id="permissions">
+                <p>The following list contains some different various of file permissions you may encounter. </p>
+        
+                <!--Start list for permissions-->
+                <ul>
+                    <li>rwxrwxrwx: Three sets of rwx. The leftmost set pertains to the owner, the middle set is for the group, and the rightmost set 
+                        is for others; rwx stands for read (r), write (w), execute (x); the dash (–) means no permission.
+                    </li>
+                    <li>rwx——: Only the owner can read, write, and execute</li>
+                    <li>rw——-: Only the owner can read and write.</li>
+                    <li>r–r–r–: Everyone can read.</li>
+                    <li>Permissions can also be expressed numerically, where read (r) is equal to 4, write (w) is equal to 2, execute (x) is equal 
+                        to 1, and no permission is equal to 0. Therefore, rwxrwxrwx is equal to 777, rwx—— is equal to 700, rw-r–r— is equal to 644, 
+                        rw——- is equal to 600, and r–r–r— is equal to 444.
+                    </li>
+                </ul><!--Close list for permissions-->
+            </div><!--close permissions div-->
+            
         </main>
         <footer>
 
