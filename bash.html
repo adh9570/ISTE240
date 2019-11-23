@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Bash Shell</title>
     <link rel="stylesheet" href="./assets/css/stylesheet.css">
+    <script src='./assets/js/code.js'></script>
 </head>
 <body id="contain">
     <div id="pagewrap">
@@ -59,102 +60,136 @@
 
         </header>
         <nav>
-
+                <div class='back' onclick='toggle()'>
+                        <div class="square">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    <div>
+                    <div id='menu' class='hide'>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Why Linux</a>
+                            <ul>
+                                <li><a href="files.html">File System</a></li>
+                                <li><a href="bash.html">How to Bash Shell</a></li>
+                            </ul>
+                        </li>
+                            <li><a href="mint.html">Linux Mint</a></li>
+                            <li><a href="#">Linux Features</a>
+                                <ul>
+                                    <li><a href="customization.html">Customization</a></li>
+                                    <li><a href="add-ons.html">Add-Ons</a></li>
+                                </ul>
+                            </li>
+                            <li style="float: right"><a href="#">About Linux</a>
+                                <ul>
+                                    <li><a href="history.html">History</a></li>
+                                    <li><a href="q&a.html">Q & A</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                </div>
         </nav>
         <main>
-            <h1>Bash Shell Introduction</h1>
+            
             <div id="bashintro">
-            <p> 
-                Now that you've gotten your Linux all set up and running,
-                A black window called a Terminal should appear on
-                your screen. containing a blinking cursor following the words:
-                <strong>root@localhost:~#</strong>
-                <img src="bashshell.jpg" alt="Bash Shell image">
-            </p>
+                <h2>Bash Shell Introduction</h2>
+                <hr>
+                <p> 
+                    Now that you've gotten your Linux all set up and running,
+                    A black window called a Terminal should appear on
+                    your screen. containing a blinking cursor following the words:
+                    <strong>root@localhost:~#</strong>
+                    <img src="bashshell.jpg" alt="Bash Shell image">
+                </p>
             </div>
             
             <div id="bashsections">
-            <h1>What Does The Bash Shell Show?</h1>
-                <p>
-                    This entire window is known as the shell prompt
-                    This is the way your terminal informs you that it is available to input the next command
-                    The shell prompt is split into different sections that help you identify certain information.
-                    <ul>
-                    <li>
-                        <strong>root:</strong>       
-                    </li>
+                <h2>What Does The Bash Shell Show?</h2>
+                <hr>
+                    <p>
+                        This entire window is known as the shell prompt
+                        This is the way your terminal informs you that it is available to input the next command
+                        The shell prompt is split into different sections that help you identify certain information.
+                        <ul>
+                        <li>
+                            <strong>root:</strong>       
+                        </li>
 
-                        <div id="bashpart">
-                            <img src="bashshell.jpg" alt="Bash Shell image">
-                        </div>
+                            <div id="bashpart">
+                                <img src="bashshell.jpg" alt="Bash Shell image">
+                            </div>
 
-                        <p>
-                            This is your username, the name of your administration account after Linux is installed.
-                            However, other accounts that are logged in to the Linux system but without the administration authorization, the
-                            root will instead display <strong>\$</strong>.
-                        </p>    
-                    
+                            <p>
+                                This is your username, the name of your administration account after Linux is installed.
+                                However, other accounts that are logged in to the Linux system but without the administration authorization, the
+                                root will instead display <strong>\$</strong>.
+                            </p>    
+                        
 
-                    <li>
-                        <strong>localhost:</strong>
-                    </li>
+                        <li>
+                            <strong>localhost:</strong>
+                        </li>
 
-                        <div id="bashpart">
-                            <img src="bashshell.jpg" alt="Bash Shell image">
-                        </div>
+                            <div id="bashpart">
+                                <img src="bashshell.jpg" alt="Bash Shell image">
+                            </div>
 
-                        <p>
-                            Here is your Linux distribution’s hostname.the hostname is the name your 
-                            distribution gives itself, but also the port your Linux will connect to. (Unless connected to a 
-                            server/ip, localhost will always be displayed as the hostname)
-                        </p>
+                            <p>
+                                Here is your Linux distribution’s hostname.the hostname is the name your 
+                                distribution gives itself, but also the port your Linux will connect to. (Unless connected to a 
+                                server/ip, localhost will always be displayed as the hostname)
+                            </p>
 
-                    <li>
-                        <strong>~:</strong>
-                    </li>
+                        <li>
+                            <strong>~:</strong>
+                        </li>
 
-                        <div id="bashpart">
-                            <img src="bashshell.jpg" alt="Bash Shell image">
-                        </div>
+                            <div id="bashpart">
+                                <img src="bashshell.jpg" alt="Bash Shell image">
+                            </div>
 
-                        <p>
-                            Following the colon is the name of the directory that you are currently in. directories
-                            are the folders your Bash Shell is currently looking in. If on Windows or MacOS, this is essentially the same
-                            as opening the Desktop, the documents folder, or any other folders on your computer.
-                        </p>
-                    
-                    <li>
-                        <strong>~</strong>
-                    </li>
+                            <p>
+                                Following the colon is the name of the directory that you are currently in. directories
+                                are the folders your Bash Shell is currently looking in. If on Windows or MacOS, this is essentially the same
+                                as opening the Desktop, the documents folder, or any other folders on your computer.
+                            </p>
+                        
+                        <li>
+                            <strong>~</strong>
+                        </li>
 
-                        <div id="bashpart">
-                            <img src="bashshell.jpg" alt="Bash Shell image">
-                        </div>
+                            <div id="bashpart">
+                                <img src="bashshell.jpg" alt="Bash Shell image">
+                            </div>
 
-                        <p>
-                            On first log in, the Bash Shell will always be inside the home directory. To show that you
-                            are in the home directory, the tilde (~) before the colon is a shortcut for the path of the home directory.
-                        </p>
+                            <p>
+                                On first log in, the Bash Shell will always be inside the home directory. To show that you
+                                are in the home directory, the tilde (~) before the colon is a shortcut for the path of the home directory.
+                            </p>
 
-                    <li>
-                        <strong>#</strong>
-                    </li>
+                        <li>
+                            <strong>#</strong>
+                        </li>
 
-                        <div id="bashpart">
-                            <img src="bashshell.jpg" alt="Bash Shell image">
-                        </div>
+                            <div id="bashpart">
+                                <img src="bashshell.jpg" alt="Bash Shell image">
+                            </div>
 
-                        <p>
-                            The pound punctuation (#) marks the end of the shell prompt text. If you enter in a command,
-                            the start of your command will appear after the #. Any valid Linux shell command can be entered at the blinking cursor.
-                        </p>
-                    
-                    </ul>
-                </p>
+                            <p>
+                                The pound punctuation (#) marks the end of the shell prompt text. If you enter in a command,
+                                the start of your command will appear after the #. Any valid Linux shell command can be entered at the blinking cursor.
+                            </p>
+                        
+                        </ul>
+                    </p>
             </div>
 
             <div id="bashcommands">
-                <h1>Some Starting Commands</h1>
+                <h2>Starting Commands</h2>
+                <hr>
 
                 <p>
                     There are a lot of commands to use in Linux, but there are some that you want to learn before anything else.
@@ -173,6 +208,7 @@
 
                 <p>
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <strong>mkdir (new directory name)</strong>
 =======
 <<<<<<< HEAD
@@ -181,14 +217,21 @@
                     <strong>mkdir (new directory name)</strong>
 >>>>>>> cefb09e73b96aabeadc44836e64cbf50205d6ebe
 >>>>>>> master
+=======
+                    <strong>mkdir (new directory name) rmdir (directory name)</strong>
+>>>>>>> master
                     <div id="bashpart">
                         <img src="bashshell.jpg" alt="Bash Shell image">
                     </div>
                     The mkdir command will create a new directory(folder) in whichever directory the user has placed themself in.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
                     In parallel, <strong>rmdir</strong> is the command used to delete a directory. 
+=======
+                     In parallel, <strong>rmdir</strong> is the command used to delete a directory. 
+>>>>>>> master
                 </p>
 
                 <p>
@@ -275,6 +318,9 @@
                     
                 </p>
     </div>
+<<<<<<< HEAD
+=======
+>>>>>>> master
 =======
 >>>>>>> master
                 </p>
@@ -288,13 +334,17 @@
                 </p>
             </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> cefb09e73b96aabeadc44836e64cbf50205d6ebe
+>>>>>>> master
+=======
 >>>>>>> master
         </main>
         <footer>
 
         </footer>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -310,6 +360,9 @@
 <<<<<<< HEAD
 =======
 >>>>>>> cefb09e73b96aabeadc44836e64cbf50205d6ebe
+>>>>>>> master
+=======
+     </div>
 >>>>>>> master
 </body>
 
