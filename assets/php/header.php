@@ -15,12 +15,12 @@
         </header>
         <nav>
                 <div class='back' onclick='toggle()'>
-                        <div class="square">
-                            <div class="bar1"></div>
-                            <div class="bar2"></div>
-                            <div class="bar3"></div>
-                        </div>
-                    <div>
+                    <div class="square">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
                     <div id='menu' class='hide'>
                     <ul>
                         <li><a href="index.php">Home</a></li>
@@ -43,6 +43,6 @@
                                     <li><a href="q&a.php">Q & A</a></li>
                                 </ul>
                             </li>
-                        </ul>
+                    </ul>
                 </div>
         </nav>
