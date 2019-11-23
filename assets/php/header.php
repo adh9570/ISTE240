@@ -23,24 +23,24 @@
                     <div>
                     <div id='menu' class='hide'>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li><a href="#">Why Linux</a>
                             <ul>
-                                <li><a href="files.html">File System</a></li>
-                                <li><a href="bash.html">How to Bash Shell</a></li>
+                                <li><a href="files.php">File System</a></li>
+                                <li><a href="bash.php">How to Bash Shell</a></li>
                             </ul>
                         </li>
-                            <li><a href="mint.html">Linux Mint</a></li>
+                            <li><a href="mint.php">Linux Mint</a></li>
                             <li><a href="#">Linux Features</a>
                                 <ul>
-                                    <li><a href="customization.html">Customization</a></li>
-                                    <li><a href="add-ons.html">Add-Ons</a></li>
+                                    <li><a href="customization.php">Customization</a></li>
+                                    <li><a href="add-ons.php">Add-Ons</a></li>
                                 </ul>
                             </li>
                             <li style="float: right"><a href="#">About Linux</a>
                                 <ul>
-                                    <li><a href="history.html">History</a></li>
-                                    <li><a href="q&a.html">Q & A</a></li>
+                                    <li><a href="history.php">History</a></li>
+                                    <li><a href="q&a.php">Q & A</a></li>
                                 </ul>
                             </li>
                         </ul>
