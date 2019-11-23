@@ -1,97 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Bash Shell</title>
-    <link rel="stylesheet" href="./assets/css/stylesheet.css">
-    <script src='./assets/js/code.js'></script>
-</head>
-<body id="contain">
-    <div id="pagewrap">
-        <header>
-            <img id='tux' src="./assets/media/tux.png" alt="Picture of Tux">
-<!-- ---------------------------------------------------------------------------------------------- -->
-	        <h1 id="header_title">Pragmatic Penguin</h1>
-	            <nav id="nav">
-			        <ul>
-				        <li>
-					        <a href="index.html">Super 1</a></li>
-				        </li>
-				        <li>
-					        <a href="Live.html">Super 2</a>
-					        <ul id="subNav">
-						        <li><a href="Live_edu.html">Sub 1 asd  asd asd asd asd asd asd asd asd asd asd asd asdasd asd asd asd asd asd asd asd asd asd </a></li>
-						        <li><a href="Live_house.html">Sub 2</a></li>
-                                <li><a href="new link"> Sub 3</a></li>
-                                <li><a href="main">MISC</a></li>
-					        </ul>
-				        </li>
-				        <li>
-					        <a href="Relax.html">Super 3</a>
-					        <ul id="subNav">
-						        <li><a href="Relax_nature.html">Sub 1</a></li>
-						        <li><a href="Relax_social.html">Sub 2</a></li>
-						        <li><a href="Relax_dining.html">Sub 3</a></li>
-						        <li><a href="main">MISC</a></li>
-					
-					        </ul>
-				        </li>
-				        <li>
-					        <a href="Explore.html">Super 4</a>
-					        <ul id="subNav">
-						        <li><a href="Explore_discover.html">Sub 1</a></li>
-						        <li><a href="main">MISC</a></li>
-					        </ul>
-				        </li>
-				        <li>
-					        <a href="About.html">Super 5</a>
-					        <ul id="subNav">
-						        <li><a href="Misc_sources.html">Sub 1</a></li>
-						        <li><a href="main">MISC</a></li>
-					        </ul>
-				        </li>
-				        <li>
-					        <a>MENU</a>
-				        </li>
-			        </ul>
-		        </nav>
-<!-- ---------------------------------------------------------------------------------------------- -->
-
-        </header>
-        <nav>
-                <div class='back' onclick='toggle()'>
-                        <div class="square">
-                            <div class="bar1"></div>
-                            <div class="bar2"></div>
-                            <div class="bar3"></div>
-                        </div>
-                    <div>
-                    <div id='menu' class='hide'>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Why Linux</a>
-                            <ul>
-                                <li><a href="files.html">File System</a></li>
-                                <li><a href="bash.html">How to Bash Shell</a></li>
-                            </ul>
-                        </li>
-                            <li><a href="mint.html">Linux Mint</a></li>
-                            <li><a href="#">Linux Features</a>
-                                <ul>
-                                    <li><a href="customization.html">Customization</a></li>
-                                    <li><a href="add-ons.html">Add-Ons</a></li>
-                                </ul>
-                            </li>
-                            <li style="float: right"><a href="#">About Linux</a>
-                                <ul>
-                                    <li><a href="history.html">History</a></li>
-                                    <li><a href="q&a.html">Q & A</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                </div>
-        </nav>
+<?php
+	$path = './';
+	$page = 'Bash';
+	include $path.'assets/php/header.php';
+?>	
         <main>
             
             <div id="bashintro">
@@ -318,52 +229,8 @@
                     
                 </p>
     </div>
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
->>>>>>> master
-                </p>
+</main>
+<?php
+include $path.'assets/php/footer.php';
+?>
 
-                <p>
-                    Pwd prints the current directory
-
-                    Cd takes you to the root directory
-                    Ls lists everything inside your current directory
-                    
-                </p>
-            </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> cefb09e73b96aabeadc44836e64cbf50205d6ebe
->>>>>>> master
-=======
->>>>>>> master
-        </main>
-        <footer>
-
-        </footer>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-     </div>
-=======
->>>>>>> master
-    </div>
-
-
-</body>
-
-</html>
-<<<<<<< HEAD
-=======
->>>>>>> cefb09e73b96aabeadc44836e64cbf50205d6ebe
->>>>>>> master
-=======
-     </div>
->>>>>>> master
-</body>
-
-</html>
