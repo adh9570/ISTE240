@@ -5,3 +5,9 @@ function toggle() {
     else
         obj.className = ''
 }
+function submit(){
+    var mail = document.getElementById('email');
+    var name = document.getElementById("name");
+    var Quest = document.getElementById("question");
+    
+}
