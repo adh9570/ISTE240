@@ -1,4 +1,25 @@
+<?php 
+include "240dbConn.php";
 
+
+if ($conn){
+
+	if(!empty($_GET['name']) && !empty($_GET['comment'])){
+
+		$stmt = $conn->prepare("insert into comments (name,email,comment) values (?,?,?)");
+
+		$stmt->bind_param("sss",$_GET['name'],$_GET['email'],$_GET['comment']);
+
+		$stmt->execute();
+
+		$stmt->close();
+
+	}
+
+    
+
+}
+?>
 
 
 <!DOCTYPE html>
@@ -50,9 +71,26 @@
                     </div>
         </nav>
         <main>
-            <p>
-                
+            <h1>Questions and Answers</h1>
+            <p>Here is a place where you can see some of the most frequently asked questions about Linux and there answers.
+                Some of the things nmight be outside the scope of this site therfore we have provided some handy links to external resources.
+
             </p>
+            <ul>
+                <li><h2>How can I run EXEs of linux</h2><p>Wine is a program that can be used to run certian .exe files. Other wise linux read alternatives exist. </p></li>
+                <li><h2>Cna I run windows and linux at the same time?</h2><p>Yes you can dual boot a system to alow for wWIndows and linux to exist on the same PC.</p></li>
+            </ul>
+            <h2>Links to external sources</h2>
+            <ul>
+                <li>www.google.com</li>
+                <li>www.google.com</li>
+            </ul>
+            <form>
+                Name:<input type="text" id ="name" title="Name"><br>
+                Email:<input type="text" id ="email" title="Email"> <br>
+                <textarea rows="5" cols="50" id = "comment" name="Comment">Enter the Question here</textarea><br>
+                <button type="button" id ="submit" >Submit</button>
+            </form>
         </main>
         <footer>
 
