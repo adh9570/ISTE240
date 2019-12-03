@@ -51,7 +51,7 @@
             <hr>
             <p>Get monthly updates on up and coming Linux events, along with new technologies.</p>
 
-            <form>
+            <form action="./submittedNewsletter.php" method="POST">
                 Name:<input type="text" name="fname" title="Name"><br>
                 Email:<input type="text" name="email" title="Email"> <br>
                 Create Password:<input type="text" name="email" title="Email"> <br>
@@ -69,7 +69,7 @@
                 <input type="checkbox" name="subscription" value="shells">Shells and Scripting<br>
                 
                 <br>
-                <button type="button" name="submit">Submit</button>
+                <input type="submit" name="submit"></input>
             </form>
         </main>
         <footer>

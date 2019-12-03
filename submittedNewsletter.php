@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<?php
+    <head>
     <meta charset="UTF-8">
     <title>Linux - Join Us!</title>
     <link rel="stylesheet" href="./assets/css/stylesheet.css">
@@ -47,35 +45,12 @@
             </div>
         </nav>
         <main>
-            <h2>Sign up for our FREE montly newsletter!</h2>
-            <hr>
-            <p>Get monthly updates on up and coming Linux events, along with new technologies.</p>
 
-            <form>
-                Name:<input type="text" name="fname" title="Name"><br>
-                Email:<input type="text" name="email" title="Email"> <br>
-                Create Password:<input type="text" name="email" title="Email"> <br>
-                Re-Enter Password:<input type="text" name="email" title="Email"> <br>
-                <br>
-                Select any subjects you'd be interested in receiving news of:<br>
-                <input type="checkbox" name="subscription" value="events">Linux Events<br>
-                <input type="checkbox" name="subscription" value="sysad">System Administration<br>
-                <input type="checkbox" name="subscription" value="data">Data Storage<br>
-                <input type="checkbox" name="subscription" value="ui">User Interfaces<br>
-                <input type="checkbox" name="subscription" value="hardware">Hardware<br>
-                <input type="checkbox" name="subscription" value="distros">Distros<br>
-                <input type="checkbox" name="subscription" value="programming">Programming<br>
-                <input type="checkbox" name="subscription" value="security">Security<br>
-                <input type="checkbox" name="subscription" value="shells">Shells and Scripting<br>
-                
-                <br>
-                <button type="button" name="submit">Submit</button>
-            </form>
         </main>
         <footer>
-
+            <h2>Thanks for signing up!</h2>
         </footer>
     </div>
 </body>
 
-</html>
+?>
