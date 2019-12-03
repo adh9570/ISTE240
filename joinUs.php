@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Linux - Join Us!</title>
+    <title>Join Us!</title>
     <link rel="stylesheet" href="./assets/css/stylesheet.css">
     <script src='./assets/js/code.js'></script>
 </head>
