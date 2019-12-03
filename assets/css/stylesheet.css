@@ -218,6 +218,9 @@ strong{
     height: auto;
     float: left;
 }
+input[type=text] {
+    border: 1px solid black;
+}
 
 @media only screen and (max-width: 870px)  {
 
