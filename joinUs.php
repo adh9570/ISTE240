@@ -1,3 +1,52 @@
+<?php
+//console.log("here");
+$yay = false;
+$list = "";
+include "240dbConn.php";
+//var_dump($conn);
+//"./submittedNewsletter.php"
+if ($conn){
+    
+	if( !empty($_POST['fname']) && !empty($_POST['pass']) && !empty($_POST['pass2']) && passMatch()){
+        foreach($_POST['subscription'] as $selected){
+            $list = $list.$selected;
+        }
+        //echo"here";
+        $stmt = $conn->prepare("insert into newsletter (name,email,subscription,pass) values (?,?,?,?)");
+       /* var_dump($_POST['pass']);
+        var_dump($_POST['fname']);
+        var_dump($_POST['pass2']);
+        var_dump($_POST['email']);
+        var_dump($list);*/
+
+        $pass = password_hash($_POST['pass'],PASSWORD_DEFAULT);
+		$stmt->bind_param("ssss",$_POST['fname'],$_POST['email'],$list,$pass);
+        //var_dump($stmt);
+		$stmt->execute();
+        var_dump($stmt);
+        $stmt->close();
+
+        header ("Location: submittedNewsletter.php");
+        $yay = true;
+	}else if ( !empty($_POST['uname']) && !empty($_POST['pass']) && !empty($_POST['pass2']) && !passMatch() ){
+		echo "<h2>Passwods dont match!</h2>";
+	}else{
+        //echo"<h1>Something has gone wrong contact your System Admin.</h1>";
+    }
+
+    
+
+}else{
+    echo"<h1>Something has gone wrong contact your System Admin.</h1>";
+}
+function passMatch(){
+    if(strcmp($_POST['pass'],$_POST['pass2'])==0){
+        return true;
+    }else{
+        return false;
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
