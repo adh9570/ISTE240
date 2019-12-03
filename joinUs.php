@@ -52,7 +52,7 @@ function passMatch(){
 
 <head>
     <meta charset="UTF-8">
-    <title>Linux - Join Us!</title>
+    <title>Join Us!</title>
     <link rel="stylesheet" href="./assets/css/stylesheet.css">
     <script src='./assets/js/code.js'></script>
 </head>
@@ -85,14 +85,14 @@ function passMatch(){
                     <li><a href="#">Linux Features</a>
                         <ul>
                             <li><a href="customization.html">Customization</a></li>
-                            <li class="active"><a href="add-ons.html">Add-Ons</a></li>
+                            <li><a href="add-ons.html">Add-Ons</a></li>
                         </ul>
                     </li>
                     <li style="float: right"><a href="#">About Linux</a>
                         <ul>
                             <li><a href="history.html">History</a></li>
                             <li><a href="q&a.html">Q & A</a></li>
-                            <li><a href="joinUs.php">Join Us!</a></li>
+                            <li class="active"><a href="joinUs.php">Join Us!</a></li>
                         </ul>
                     </li>
                 </ul>
