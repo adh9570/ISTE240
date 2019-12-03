@@ -3,25 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Linux - Join Us!</title>
+    <title>Linux Q&A</title>
     <link rel="stylesheet" href="./assets/css/stylesheet.css">
     <script src='./assets/js/code.js'></script>
 </head>
 <body id="contain">
     <div id="pagewrap">
         <header>
-                <img id='tux' src="./assets/media/tux.png" alt="Picture of Tux">
+                <div class='mascot'>
+                <img class='tux' src="./assets/media/tux.png" alt="Picture of Tux">
                 <h1>Pragmatic Penguin</h1>
+                </div>
         </header>
-        <nav>
-                <div class='back' onclick='toggle()'>
-                        <div class="square">
-                            <div class="bar1"></div>
-                            <div class="bar2"></div>
-                            <div class="bar3"></div>
-                        </div>
-                    <div>
-                    <div id='menu' class='hide'>
+        <nav class="fix">
+            <div class='back' onclick='toggle()'>
+                <div class="square">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            <div>
+            <div id='menu' class='hide'>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Why Linux</a>
@@ -48,8 +50,11 @@
             </div>
         </nav>
         <main>
+            <div class="space">
+                <br>
             <h2>Sign up for our FREE montly newsletter!</h2>
             <hr>
+            <br>
             <p>Get monthly updates on up and coming Linux events, along with new technologies.</p>
             <form action="./submittedNewsletter.php" method="POST">
                 Name:<input type="text" name="fname" title="Name"><br>
@@ -71,6 +76,7 @@
                 <br>
                 <input type="submit" name="submit"></input>
             </form>
+            </div>
         </main>
         <footer>
         </footer>

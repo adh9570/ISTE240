@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
+/*setting everything to null*/
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@
     background: transparent;
     list-style: none;
 }
-
+/*changing the nav bars style and size*/
 nav {
     font-family: 'Montserrat';
     height: auto;
@@ -19,7 +20,7 @@ nav {
     margin-left: auto;
     background-color: #FFB200;
 }
-
+/*setting up the list for nav*/
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -72,38 +73,38 @@ li a:hover {
     color: #000000;
     background-color: #ffffff;
 }
-
+/*making the header black and setting the font*/
 header{
     background-color: black;
     height: 170px;
     font-family: 'Montserrat';
 }
-
+/*setting the header*/
 header h1{
     font-size: 44px;
     color: #FFB200;
     text-shadow: 2px 2px rgb(255, 255, 255, .9);
     padding-top: 40px;
 }
-
+/*making the size of tux and padding*/
 .tux{
     width: 120px;
     padding: 20px;
     float: left;
 }
-
+/*the width of the menu set*/
 #menu{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
-
+/*setting a div around tux*/
 .mascot{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
-
+/*making the main size 70 percent and changing the font*/
 main{
     width: 70%;
     margin-right: auto;
@@ -112,143 +113,147 @@ main{
     font-family: 'Ubuntu Mono';
     padding-bottom: 40px;
 }
-
+/*setting the space inside the main*/
 .space{
     margin-left: auto;
     margin-right: auto;
     width: 90%;
 }
-
+/*setting the add-ons background color to darker grey*/
 #add-ons{
     border: 2px solid black;
     padding: 10px;
     background-color: rgb(189, 189, 189);
 }
-
+/*having no style on the list*/
 #add-ons ul{
     list-style-type: none;
 }
+/*setting the font*/
 h2{
     font-size: 25px;
     font-family: 'Montserrat';
 }
-
+/*fix the nav bar*/
 .fix{
     position: sticky;
     position: -webkit-sticky;
     top: 0;
 }
-
+/*emphasize text with this class*/
 .emphasize{
     font-weight: bolder;
     font-size: 16px;
 }
-
+/*madde the images a certain size*/
 .service img{
     width: 250px;
     float: left;
     padding: 20px;
 }
-
+/*made the horizontal rule thiccer*/
 hr{
     border: 2px solid black;
 }
-
+/*made teh strong bolder*/
 strong{
     font-weight: bolder;
 }
-
+/*made it active for user to know where they are*/
 .active{
     background-color: white;
 }
+/*setting the divs in a form*/
 .service{
     display: inline-block;
 }
-
+/*setting the images to the middle*/
 .bashintro img{
     display: block;
     margin: 0 auto;
     width: 70%;
 }
-
+/*setting the size and images to middle*/
 .theMeat img{
     display: block;
     margin: 0 auto;
     width: 50%;
     height: auto;
 }
-
+/*history images set to full fize*/
 .history img{
     width: 100%;
 }
-
+/*file images set to the right size and middle align*/
 .files img{
     width: 60%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
-
+/*setting the main title to center*/
 .mainTitle{
     text-align: center;
 }
-
+/*setting the text and text size*/
 .mainTitle h1{
     font-size: 60px;
     font-family: monospace;
 }
-
+/*target set to the middle*/
 .target img{
     display: block;
     margin: 0 auto;
     width: 40%;
 }
-
+/*set to the middle and the size*/
 .mint img{
     width: 70%;
     display: block;
     margin: 0 auto;
 }
-
+/*setting the blocks*/
 .qa .service{
     display: inline-block
 }
-
+/*setting the image float*/
 .qa img {
     height: auto;
     float: left;
 }
 
+/*size for smaller devices*/
 @media only screen and (max-width: 870px)  {
 
-
+    /*setting the size of the header and nav*/
     main, #menu{
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
-    
+    /*changing the size and position of tux*/
     .mascot{
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
-
+    /*setting the images to the corrrect size for the view port*/
     .bashsections img, .bashcommands img{
         display: block;
         margin: 0 auto;
         width: 90%;
     }
-
+    /*setting the images to the corrrect size for the view port*/
     .mint img{
         width: 90%;
-    }
-
+    }    
+    /*setting the images to the corrrect size for the view port*/
     .files img{
         width: 90%;
     }
 
 }
+/*for the mobile devices*/
 @media only screen and (max-width: 620px)  {
 
     /*making the width of the nav button full size*/
@@ -268,26 +273,28 @@ strong{
         display: block;
         border: 1px solid black;
     }
-
+    /*used to hide the hamburger math*/
     .hide{
         display: none;
     }
+    /*shows the navigation bar*/
     .back{
         width: 100%;
         background-color: #FFB200;
     }
-
+    /*where the 3 bars are in a square box*/
     .square{
         display: inline-block;
         margin-left: 10px;
     }
-
+    /*used to signify the hamburger menu*/
     .bar1, .bar2, .bar3{
         width: 35px;
         height: 5px;
         background-color: #000000;
         margin: 6px 0;
     }
+    /*used to keep tux in the corner*/
     .mascot{
         width: 100%;
     }
