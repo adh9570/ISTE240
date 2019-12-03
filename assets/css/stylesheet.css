@@ -6,7 +6,7 @@
 
 #pagewrap{
     width: 1200px;
-    height: 1000px;
+    height: 1500px;
     border: 1px solid black;
     background-image: linear-gradient(to bottom right, #ff8800, black);
     margin-left: auto;
@@ -292,3 +292,36 @@ img{
     height: 150px;
 }
 
+#leftIMG{
+    float: left;
+    margin: 10px;
+    height: 200px;
+    width: 250px;
+    padding-right: 15px;
+}
+
+#rightIMG{
+    float: right;
+    margin: 10px;
+    height: 200px;
+    width: 250px;
+    padding-right: 15px;
+}
+
+#centerIMG{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 600px;
+    padding: 15px;
+}
+
+#centerIMG1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 700px;
+    padding: 15px;
+}
