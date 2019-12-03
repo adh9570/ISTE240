@@ -3,13 +3,13 @@
 # Team Members
 > Team Leader - Alexis Halbur
 
-> Content Creators/Strategists - Edmond Behaeghel
+> Content Creators/Strategists - Matthew Russell & Harry Hong
 
 > Information Architect - Edmond Behaeghel
 
-> Graphic Designer -Edmond Behaeghel
+> Graphic Designer - Jared Slavin
 
-> Interaction Designer -Edmond Behaeghel
+> Interaction Designer - Kevin Niedzwecki
 
 # Overview
 Here at Pragmatic Penguin, we strive to be a trusted source of information for new users seeking to begin their Linux education. Our goal is to make users feel comfortable approaching the daunting subject that is learning Linux. We try to present our material in an organized, easy-to-follow fashion that guides users through the step-by-step basics of getting into Linux and setting up Linux Mint. We want those who have no previous understanding of Linux to be able to arrive at our site, and leave with a fully installed and potentially even customized Linux distro! Whether their interest is personal or professional, Pragmatic Penguin seeks to aide users in all aspects of becoming acclimated with Linux.
