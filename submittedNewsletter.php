@@ -33,13 +33,13 @@
                     <li><a href="#">Linux Features</a>
                         <ul>
                             <li><a href="customization.html">Customization</a></li>
-                            <li class="active"><a href="add-ons.html">Add-Ons</a></li>
+                            <li><a href="add-ons.html">Add-Ons</a></li>
                         </ul>
                     </li>
                     <li style="float: right"><a href="#">About Linux</a>
                         <ul>
                             <li><a href="history.html">History</a></li>
-                            <li><a href="q&a.html">Q & A</a></li>
+                            <li class="active"><a href="q&a.html">Q & A</a></li>
                             <li><a href="joinUs.php">Join Us!</a></li>
                         </ul>
                     </li>
