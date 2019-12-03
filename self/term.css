@@ -2,6 +2,25 @@
     border-style: solid;
     background-color: black;
     color: white;
-    max-width: 80vw;
-    /* padding: 5em; */
+    width: 80vw;
+    height: 30vw;
+    padding: 1.5em;
+}
+
+.termText {
+    color: white;
+}
+
+input {
+    background-color: transparent;
+    color: white;
+    border: 0px;
+}
+
+textarea {
+    float: left;
+    background-color: transparent;
+    color: white;
+    width: 78vw;
+    border: none;
 }
