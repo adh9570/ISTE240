@@ -75,6 +75,7 @@ if ($conn){
                                 <ul>
                                     <li><a href="history.html">History</a></li>
                                     <li><a href="q&a.php">Q & A</a></li>
+                                    <li><a href="joinUs.php">Join Us!</a></li>
                                 </ul>
                             </li>
                         </ul>
