@@ -11,18 +11,20 @@
 <body id="contain">
     <div id="pagewrap">
         <header>
-            <img id='tux' src="./assets/media/tux.png" alt="Picture of Tux">
-            <h1>Pragmatic Penguin</h1>
+                <div class='mascot'>
+                <img class='tux' src="./assets/media/tux.png" alt="Picture of Tux">
+                <h1>Pragmatic Penguin</h1>
+                </div>
         </header>
-        <nav>
-                <div class='back' onclick='toggle()'>
-                        <div class="square">
-                            <div class="bar1"></div>
-                            <div class="bar2"></div>
-                            <div class="bar3"></div>
-                        </div>
-                    <div>
-                    <div id='menu' class='hide'>
+        <nav class="fix">
+            <div class='back' onclick='toggle()'>
+                <div class="square">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            <div>
+            <div id='menu' class='hide'>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Why Linux</a>
@@ -40,16 +42,19 @@
                     </li>
                     <li style="float: right"><a href="#">About Linux</a>
                         <ul>
-                            <li><a href="history.html">History</a></li>
+                            <li class="active"><a href="history.html">History</a></li>
                             <li><a href="q&a.html">Q & A</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </nav>
-        <main>
+        <main class="history">
+            <br>
+                <div class="space">
             <h2>Linux History</h2>
             <hr>
+            <br>
             <p>
                 Similar to Mac Os X, Linux is based off of the Unix operating system.
                 Unix was a system developed between 1965 and the early 1970’s by a research team at AT&T’s Bell Labs
@@ -64,8 +69,9 @@
                 Some distributions of Linux are similar to other operating systems such as Windows 7 or Windows 10, however changing between different distributions of Linux is not the same as upgrading from Windows 7 to Windows 10, as they are considered “different versions” of the same operating system.
                 Instead, distributions of Linux combine different bundles of applications and libraries to create a similar yet different “operating system”
             </p>
-
+            <br><br>
             <img src="./assets/media/timeline.jpg" alt="Timeline of Linux">
+            <!--Source: https://tecnopia.org/pagina-con-slide/page/24/-->
         </main>
         <footer>
     

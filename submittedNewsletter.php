@@ -1,5 +1,4 @@
-<?php
-    <head>
+<head>
     <meta charset="UTF-8">
     <title>Linux - Join Us!</title>
     <link rel="stylesheet" href="./assets/css/stylesheet.css">
@@ -45,12 +44,10 @@
             </div>
         </nav>
         <main>
-
+        
         </main>
         <footer>
             <h2>Thanks for signing up!</h2>
         </footer>
     </div>
 </body>
-
-?>

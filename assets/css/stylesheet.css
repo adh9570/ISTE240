@@ -1,60 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap');
 * {
-    box-sizing: border-box;
-}
-
-#pagewrap{
-    width: 1200px;
-    height: 1000px;
-    border: 1px solid black;
-    background-image: linear-gradient(to bottom right, #ff8800, black);
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 12px 12px 15px rgb(0, 0, 0, .5);
-    font-size: 16px;
-}
-
-#contain{
-    background-color: lightgray;
-}
-
-header{
-    background-color: black;
-    padding: 1px 0px 1px;
-}
-
-main{
-    margin: 1px 50px 1px;
-    color: black;
-    font-family: 'Ubuntu Mono', monospace;
-}
-
-footer{
-
-}
-
-header h1{
-    font-size: 60px;
-    color: #FFB200;
-    text-shadow: 2px 2px rgb(255, 255, 255, .9);
-}
-
-h1{
-    font-family: 'Montserrat';
-    color: black;
-}
-
-h2{
-    font-weight: bolder;
-    font-family: 'Montserrat';
-    color: black;
-}
-
-#tux{
-    width: 100px;
-    margin: 20px;
-    float: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
 }
 
 nav {
@@ -63,7 +17,7 @@ nav {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 10px;
+    background-color: #FFB200;
 }
 
 nav ul {
@@ -119,85 +73,153 @@ li a:hover {
     background-color: #ffffff;
 }
 
-#theMeat{
-    border: 1px solid black;
-    background-color: lightgray;
-    margin-bottom: 20px;
+header{
+    background-color: black;
+    height: 170px;
+    font-family: 'Montserrat';
 }
 
-#add-ons{
-    border: 1px solid black;
-    background-color: lightgray;
-    margin-bottom: 20px;
+header h1{
+    font-size: 44px;
+    color: #FFB200;
+    text-shadow: 2px 2px rgb(255, 255, 255, .9);
+    padding-top: 40px;
 }
 
-#add-ons ul li{
-    font-weight: bold;
-    font-size: large;
+.tux{
+    width: 120px;
+    padding: 20px;
+    float: left;
 }
 
-#add-ons p{    
-    font-weight: normal;
-    font-size: 16px;
-}
-
-#theMeat li{
-    font-weight: bold;
-    font-size: large;
-}
-
-#theMeat ol li{
-    font-weight: normal;
-    font-size: 100%;
-}
-
-hr {
-    border: 1px solid #000000;
-    width: 100%;
+#menu{
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
 
-img{
-    width: 1100px;
+.mascot{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+main{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(228, 228, 228);
+    font-family: 'Ubuntu Mono';
+    padding-bottom: 40px;
+}
 
-@media only screen and (max-width: 1000px)  {
+.space{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
 
-    #tux{
-        width: 70px;
+#add-ons{
+    border: 2px solid black;
+    padding: 10px;
+    background-color: rgb(189, 189, 189);
+}
+
+#add-ons ul{
+    list-style-type: none;
+}
+h2{
+    font-size: 25px;
+    font-family: 'Montserrat';
+}
+
+.fix{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.emphasize{
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.service img{
+    width: 250px;
+    float: left;
+    padding: 20px;
+}
+
+hr{
+    border: 2px solid black;
+}
+
+strong{
+    font-weight: bolder;
+}
+
+.active{
+    background-color: white;
+}
+.service{
+    display: inline-block;
+}
+
+.bashintro img{
+    display: block;
+    margin: 0 auto;
+}
+
+.theMeat img{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+
+.history img{
+    width: 100%;
+}
+
+.files img{
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.mainTitle{
+    text-align: center;
+}
+
+.mainTitle h1{
+    font-size: 60px;
+    font-family: monospace;
+}
+
+.target img{
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}
+
+@media only screen and (max-width: 870px)  {
+
+
+    main, #menu{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
-
-    header h1{
-        font-size: 45px;
-    }
-
-    #pagewrap{
-        width: 700px;
+    
+    .mascot{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
-
-@media only screen and (max-width: 600px) {
-
-    main h2{
-        font-size: 28px;
-    }
-
-    #tux{
-        width: 70px;
-        margin: 10px 30px 0px 165px;
-    }
-
-    header h1{
-        font-size: 35px;
-        text-align: center;
-    }
-
-    #pagewrap{
-        width: 400px;
-    }
+@media only screen and (max-width: 620px)  {
 
     /*making the width of the nav button full size*/
     nav ul li {
@@ -206,7 +228,7 @@ img{
 
     /*making the items in the nav full size*/
     nav ul li ul {
-        width: 398px;
+        width: 100%;
     }
 
     /*making the items in the nav full size*/
@@ -233,62 +255,10 @@ img{
     .bar1, .bar2, .bar3{
         width: 35px;
         height: 5px;
-        background-color: #fff;
+        background-color: #000000;
         margin: 6px 0;
     }
+    .mascot{
+        width: 100%;
+    }
 }
-
-#joinUs {
-    margin-left: 62em;
-    margin-top: -6em;
-    padding-bottom:70px;
-}
-
-#newsLetter {
-    text-align: center;
-    font-size: large;
-    width: 150px;
-    height: 50px;
-}
-
-#mainTitle {
-    text-align: center;
-}
-
-#infoPic {
-    height: 70px;
-    width: 70px;
-    margin-left: 5em;
-    margin-top: 2em;
-}
-
-#learnIcon {
-    height: 75px;
-    width: 100px;
-    margin-left: 4em;
-    align-self: auto;
-}
-
-#audImg {
-    width: 100px;
-}
-
-#targetAud {
-    margin-left: 25em;
-    margin-top: -16.5em;
-}
-
-#targetAud p {
-    border: 1px solid black;
-    padding: 2px;
-    width: 250px;
-    height: 150px;
-}
-
-#aud {
-    padding: 2px;
-    border: 1px solid black;
-    width: 250px;
-    height: 150px;
-}
-
