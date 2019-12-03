@@ -6,30 +6,32 @@ include "240dbConn.php";
 //var_dump($conn);
 //"./submittedNewsletter.php"
 if ($conn){
-    
+    ///??
 	if( !empty($_POST['fname']) && !empty($_POST['pass']) && !empty($_POST['pass2']) && passMatch()){
         foreach($_POST['subscription'] as $selected){
             $list = $list.$selected;
-        }
+        }//This for each loop servers to take all the subscriptions and from a massive string with them
         //echo"here";
         $stmt = $conn->prepare("insert into newsletter (name,email,subscription,pass) values (?,?,?,?)");
-       /* var_dump($_POST['pass']);
+        /*
+        var_dump($_POST['pass']);
         var_dump($_POST['fname']);
         var_dump($_POST['pass2']);
         var_dump($_POST['email']);
-        var_dump($list);*/
+        var_dump($list);
+        */
 
         $pass = password_hash($_POST['pass'],PASSWORD_DEFAULT);
 		$stmt->bind_param("ssss",$_POST['fname'],$_POST['email'],$list,$pass);
         //var_dump($stmt);
 		$stmt->execute();
-        var_dump($stmt);
+        //var_dump($stmt);
         $stmt->close();
 
-        header ("Location: submittedNewsletter.php");
+        header ("Location: submittedNewsletter.php");//Sendthem away to the thank you page
+	}else if ( !empty($_POST['fname']) && !empty($_POST['pass']) && !empty($_POST['pass2']) && !passMatch() ){
+        //echo "<h2>Passwods dont match!</h2>";
         $yay = true;
-	}else if ( !empty($_POST['uname']) && !empty($_POST['pass']) && !empty($_POST['pass2']) && !passMatch() ){
-		echo "<h2>Passwods dont match!</h2>";
 	}else{
         //echo"<h1>Something has gone wrong contact your System Admin.</h1>";
     }
@@ -102,22 +104,27 @@ function passMatch(){
             <h2>Sign up for our FREE monthly newsletter!</h2>
             <hr>
             <p>Get monthly updates on up-and-coming Linux events, along with new technologies.</p>
-            <form action="./submittedNewsletter.php" method="POST">
+            <?php
+                if($yay){
+                    echo"<h2>Passwords dont match.</h2>";
+                }
+            ?>
+            <form action="./joinUs.php" method="POST">
                 Name:<input type="text" name="fname" title="Name"><br>
                 Email:<input type="text" name="email" title="Email"> <br>
-                Create Password:<input type="text" name="email" title="Email"> <br>
-                Re-Enter Password:<input type="text" name="email" title="Email"> <br>
+                Create Password:<input type="text" name="pass" title="pass"> <br>
+                Re-Enter Password:<input type="text" name="pass2" title="pass2"> <br>
                 <br>
                 Select any subjects you'd be interested in receiving news of:<br>
-                <input type="checkbox" name="subscription" value="events">Linux Events<br>
-                <input type="checkbox" name="subscription" value="sysad">System Administration<br>
-                <input type="checkbox" name="subscription" value="data">Data Storage<br>
-                <input type="checkbox" name="subscription" value="ui">User Interfaces<br>
-                <input type="checkbox" name="subscription" value="hardware">Hardware<br>
-                <input type="checkbox" name="subscription" value="distros">Distros<br>
-                <input type="checkbox" name="subscription" value="programming">Programming<br>
-                <input type="checkbox" name="subscription" value="security">Security<br>
-                <input type="checkbox" name="subscription" value="shells">Shells and Scripting<br>
+                <input type="checkbox" name="subscription[]" value="events">Linux Events<br>
+                <input type="checkbox" name="subscription[]" value="sysad">System Administration<br>
+                <input type="checkbox" name="subscription[]" value="data">Data Storage<br>
+                <input type="checkbox" name="subscription[]" value="ui">User Interfaces<br>
+                <input type="checkbox" name="subscription[]" value="hardware">Hardware<br>
+                <input type="checkbox" name="subscription[]" value="distros">Distros<br>
+                <input type="checkbox" name="subscription[]" value="programming">Programming<br>
+                <input type="checkbox" name="subscription[]" value="security">Security<br>
+                <input type="checkbox" name="subscription[]" value="shells">Shells and Scripting<br>
                 
                 <br>
                 <input type="submit" name="submit"></input>
