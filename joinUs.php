@@ -50,7 +50,7 @@
             </div>
         </nav>
         <main>
-            <h2>Sign up for our FREE montly newsletter!</h2>
+            <h2>Sign up for our FREE monthly newsletter!</h2>
             <hr>
             <p>Get monthly updates on up and coming Linux events, along with new technologies.</p>
             <form action="./submittedNewsletter.php" method="POST">
