@@ -52,7 +52,7 @@
         <main>
             <h2>Sign up for our FREE monthly newsletter!</h2>
             <hr>
-            <p>Get monthly updates on up and coming Linux events, along with new technologies.</p>
+            <p>Get monthly updates on up-and-coming Linux events, along with new technologies.</p>
             <form action="./submittedNewsletter.php" method="POST">
                 Name:<input type="text" name="fname" title="Name"><br>
                 Email:<input type="text" name="email" title="Email"> <br>
