@@ -220,6 +220,18 @@ strong{
 }
 input[type=text] {
     border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+input[type=submit]{
+    background-color: #FFB200;
+    color: black;
+    border: 1px solid black;
+    padding: 3px;
+}
+textarea{
+    background-color: white;
+    color: black;
 }
 
 @media only screen and (max-width: 870px)  {
