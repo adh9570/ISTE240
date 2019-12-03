@@ -1,23 +1,33 @@
-<?php 
+<?php
+//console.log("here");
+$yay = false;
 include "240dbConn.php";
-
+//var_dump($conn);
 
 if ($conn){
-
-	if(!empty($_GET['name']) && !empty($_GET['comment'])){
-
-		$stmt = $conn->prepare("insert into comments (name,email,comment) values (?,?,?)");
-
+    //var_dump($_GET['name']);
+    //var_dump($_GET['comment']);
+    //var_dump($_GET['email']);
+    
+	if(!empty($_GET['name']) && !empty($_GET['comment']) && !empty($_GET['email'])){
+        
+        //echo"here";
+		$stmt = $conn->prepare("insert into questions (name,email,comment) values (?,?,?)");
 		$stmt->bind_param("sss",$_GET['name'],$_GET['email'],$_GET['comment']);
 
 		$stmt->execute();
-
-		$stmt->close();
-
-	}
+        
+        $stmt->close();
+        
+        $yay = true;
+	}else{
+        //echo"<h1>Something has gone wrong contact your System Admin.</h1>";
+    }
 
     
 
+}else{
+    echo"<h1>Something has gone wrong contact your System Admin.</h1>";
 }
 ?>
 
@@ -71,6 +81,11 @@ if ($conn){
                     </div>
         </nav>
         <main>
+        <?php
+                if($yay){
+                    echo"<h2>Thank you for your Question.</h2>";
+                }
+            ?>
             <h1>Questions and Answers</h1>
             <p>Here is a place where you can see some of the most frequently asked questions about Linux and there answers.
                 Some of the things nmight be outside the scope of this site therfore we have provided some handy links to external resources.
@@ -85,11 +100,12 @@ if ($conn){
                 <li>www.google.com</li>
                 <li>www.google.com</li>
             </ul>
-            <form>
-                Name:<input type="text" id ="name" title="Name"><br>
-                Email:<input type="text" id ="email" title="Email"> <br>
-                <textarea rows="5" cols="50" id = "comment" name="Comment">Enter the Question here</textarea><br>
-                <button type="button" id ="submit" >Submit</button>
+            
+            <form action="q&a.php" method="get">
+                Name:<input type="text" id ="name" name="name"><br>
+                Email:<input type="text" id ="email" name="email"><br>
+                <textarea rows="5" cols="50" id = "comment" name="comment">Enter the Question here</textarea><br>
+                <input type="submit" value="submit"/>
             </form>
         </main>
         <footer>
