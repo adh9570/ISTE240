@@ -11,46 +11,51 @@
 <body id="contain">
     <div id="pagewrap">
         <header>
-                <img id='tux' src="./assets/media/tux.png" alt="Picture of Tux">
+                <div class='mascot'>
+                <img class='tux' src="./assets/media/tux.png" alt="Picture of Tux">
                 <h1>Pragmatic Penguin</h1>
+                </div>
         </header>
-        <nav>
-                <div class='back' onclick='toggle()'>
-                        <div class="square">
-                            <div class="bar1"></div>
-                            <div class="bar2"></div>
-                            <div class="bar3"></div>
-                        </div>
-                    <div>
-                    <div id='menu' class='hide'>
+        <nav class="fix">
+            <div class='back' onclick='toggle()'>
+                <div class="square">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            <div>
+            <div id='menu' class='hide'>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Why Linux</a>
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Why Linux</a>
-                                <ul>
-                                    <li><a href="file.html">File System</a></li>
-                                    <li><a href="bash.html">How to Bash Shell</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="mint.html">Linux Mint</a></li>
-                            <li><a href="#">Linux Features</a>
-                                <ul>
-                                    <li><a href="customization.html">Customization</a></li>
-                                    <li><a href="add-ons.html">Add-Ons</a></li>
-                                </ul>
-                            </li>
-                            <li style="float: right"><a href="#">About Linux</a>
-                                <ul>
-                                    <li><a href="history.html">History</a></li>
-                                    <li><a href="q&a.html">Q & A</a></li>
-                                </ul>
-                            </li>
+                            <li class="active"><a href="files.html">File System</a></li>
+                            <li><a href="bash.html">How to Bash Shell</a></li>
                         </ul>
-                    </div>
+                    </li>
+                    <li><a href="mint.html">Linux Mint</a></li>
+                    <li><a href="#">Linux Features</a>
+                        <ul>
+                            <li><a href="customization.html">Customization</a></li>
+                            <li><a href="add-ons.html">Add-Ons</a></li>
+                        </ul>
+                    </li>
+                    <li style="float: right"><a href="#">About Linux</a>
+                        <ul>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="q&a.html">Q & A</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <main>
+        <main class='files'>
+                <div class="space">
+                    <br>
             <h2>File Systems</h2>
             <hr>
-            <div id="intro"><!--Start div for intro p-->
+            <br>
+            <div class="intro"><!--Start div for intro p-->
                 <p>
                     In Linux, everything is a file. If it's not a file then it is a process. It is important to note that there
                     are different types of files in Linux, but it is an accepted generalization to refer to them all as files. 
@@ -62,13 +67,15 @@
                 </p>
             </div><!--end div for intro p-->
         
-            <div id="directories">
+            <div class="directories">
                 <p>The following list contains some common directories in Linux. This can prove to be useful when trying to find a file or location to
                     store a specific file.
                 </p>
+                <br>
 
-                <img src="assets/media/linuxCommands.png" height="400" width="70" alt="Basic Linux Commands">
-        
+                <img src="assets/media/linuxCommands.png" style='border: 2px solid black;' alt="Basic Linux Commands">
+                <br>
+                <br>
                 <ul><!--Start the list for the common directories and meaning-->
                     <li>*/: Root directory (Based off of the file system)</li>
                     <li>/bin: Executable programs</li>
@@ -82,7 +89,7 @@
                 </ul><!--End list of common directories-->
             </div><!--End div for common directories-->
         
-            <div id="permissions">
+            <div class="permissions">
                 <p>The following list contains some different various types of file permissions you may encounter. </p>
         
                 <!--Start list for permissions-->
@@ -99,8 +106,8 @@
                     </li>
                 </ul><!--Close list for permissions-->
             </div><!--close permissions div-->
-
-            <img src="assets/media/permissions.png" alt="Linux Permissions" height="20" width="100">
+            <br><br>
+            <img src="assets/media/permissions.png" alt="Linux Permissions">
             
         </main>
         <footer>

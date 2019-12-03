@@ -45,12 +45,10 @@
             </div>
         </nav>
         <main>
-
         </main>
         <footer>
             <h2>Thanks for signing up!</h2>
         </footer>
     </div>
 </body>
-
 ?>
