@@ -5,3 +5,7 @@ function toggle() {
     else
         obj.className = ''
 }
+
+function newsLetter() {
+    window.open("joinUs.html", "_blank");
+}

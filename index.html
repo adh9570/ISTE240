@@ -10,20 +10,22 @@
 <body id="contain">
     <div id="pagewrap">
         <header>
-                <img id='tux' src="./assets/media/tux.png" alt="Picture of Tux">
+                <div class='mascot'>
+                <img class='tux' src="./assets/media/tux.png" alt="Picture of Tux">
                 <h1>Pragmatic Penguin</h1>
+                </div>
         </header>
-        <nav>
-                <div class='back' onclick='toggle()'>
-                        <div class="square">
-                            <div class="bar1"></div>
-                            <div class="bar2"></div>
-                            <div class="bar3"></div>
-                        </div>
-                    <div>
-                    <div id='menu' class='hide'>
+        <nav class="fix">
+            <div class='back' onclick='toggle()'>
+                <div class="square">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            <div>
+            <div id='menu' class='hide'>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="#">Why Linux</a>
                         <ul>
                             <li><a href="files.html">File System</a></li>
@@ -47,17 +49,30 @@
             </div>
         </nav>
         <main>
-            <p>
-                <ul>
-                    <li>
-                        Linux Mint takes just a few clicks to install
-                    </li>
-                    <li>
-                        Once you have your OS ready to go, learn more about how to operate the system 
-                        in our File System and Bash Shell How To sections
-                    </li>
-                </ul>
-            </p>
+            <div class="space">
+                <div class="mainTitle">
+                    <h1>New to Linux?</h1>
+                    <h2>Start your Learning Here!</h2>
+                    <hr>
+                </div>
+                <br>
+                <br>
+                <div id="audImg">
+                    <p id="aud">The target audience for our site is beginners in linux. We will walk you through the basics of linux from install
+                        to customization. If you are an expert already, feel free to look around!
+                    </p>    
+
+                </div>
+
+                <div class="target">
+                    <img id="learnIcon" src="./assets/media/learnIcon.png" alt="Learn Icon"/>
+                    <!--picture source https://allisonchampion.com/emdrtherapy/-->
+                    <p>We hope to teach you how to operate the bash shell, customize Linux with add-ons, navagate the file system, and take you through
+                        an install of Linux Mint!
+                    </p>
+                </div>
+            </div>
+
         </main>
         <footer>
 
