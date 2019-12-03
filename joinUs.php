@@ -91,8 +91,8 @@ function passMatch(){
                     <li style="float: right"><a href="#">About Linux</a>
                         <ul>
                             <li><a href="history.html">History</a></li>
-                            <li class="active"><a href="q&a.html">Q & A</a></li>
-                            <li><a href="joinUs.php">Join Us!</a></li>
+                            <li><a href="q&a.html">Q & A</a></li>
+                            <li class="active"><a href="joinUs.php">Join Us!</a></li>
                         </ul>
                     </li>
                 </ul>
