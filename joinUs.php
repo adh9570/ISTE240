@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <title>Linux Q&A</title>
+=======
+    <title>Join Us!</title>
+>>>>>>> 3ac02290cc0c2fd8ddb0332c4686e72691b0351f
     <link rel="stylesheet" href="./assets/css/stylesheet.css">
     <script src='./assets/js/code.js'></script>
 </head>
@@ -36,14 +40,14 @@
                     <li><a href="#">Linux Features</a>
                         <ul>
                             <li><a href="customization.html">Customization</a></li>
-                            <li><a href="add-ons.html">Add-Ons</a></li>
+                            <li class="active"><a href="add-ons.html">Add-Ons</a></li>
                         </ul>
                     </li>
                     <li style="float: right"><a href="#">About Linux</a>
                         <ul>
                             <li><a href="history.html">History</a></li>
                             <li><a href="q&a.html">Q & A</a></li>
-                            <li class="active"><a href="joinUs.php">Join Us!</a></li>
+                            <li><a href="joinUs.php">Join Us!</a></li>
                         </ul>
                     </li>
                 </ul>
